@@ -1,47 +1,125 @@
-.row.horizontal-menu
-  %ul.nav.nav-tabs.nav-justified
-    %li.active= image_tag 'icon_home.png'
-    %li= image_tag 'icon_profiles.png'
-    %li= image_tag 'icon_reports.png'
-    %li= image_tag 'icon_benchmark.png'
-    %li= link_to t('.filter'), root_path, class: "btn btn-default"
+%section.horizontal-menu.grey
+  .column-and-a-half.col-xs-offset-1
+    = link_to root_path, class: "text-center" do
+      = image_tag 'icon_home.png'
+      %p= t('.home')
+  .column-and-a-half
+    = link_to root_path, class: "text-center" do
+      = image_tag 'icon_profiles.png'
+      %p= t('.profiles')
+  .column-and-a-half
+    = link_to root_path, class: "text-center" do
+      = image_tag 'icon_reports.png'
+      %p= t('.reports')
+  .column-and-a-half
+    = link_to root_path, class: "text-center" do
+      = image_tag 'icon_benchmark.png'
+      %p= t('.benchmark')
+  .col-xs-4.pull-right
+    = link_to t('.filter'), root_path, class: "btn btn-default btn-wide toxic-green"
     = render 'switch'
-.row
-  .controls.pull-left
-    %span.glyphicon.glyphicon-repeat
-    %span.glyphicon.glyphicon-repeat
-  .info.pull-right
-    =t('.update_time')
-.row
-  .col-xs-4.vertical-menu
-    .panel
-      %ul.nav.nav-list
-        %li.nav-header= link_to t('.crm'), root_path
-        %li.active= link_to t('.crm_item1'), root_path
-        %li= link_to t('.crm_item2'), root_path
-        %li= link_to t('.crm_item3'), root_path
-        %li= link_to t('.crm_item4'), root_path
-        %li.nav-header= link_to t('.profiles'), root_path
-        %li= link_to t('.profiles_item1'), root_path
-        %li= link_to t('.profiles_item2'), root_path
-        %li= link_to t('.profiles_item3'), root_path
-        %li= link_to t('.profiles_item4'), root_path
-        %li= link_to t('.profiles_item5'), root_path
-        %li.nav-header= link_to t('.reports'), root_path
-        %li= link_to t('.reports_item1'), root_path
-        %li= link_to t('.reports_item2'), root_path
-        %li= link_to t('.reports_item3'), root_path
-        %li= link_to t('.reports_item4'), root_path
-        %li= link_to t('.reports_item5'), root_path
-  .col-xs-8
-    .panel.panel-default
-      .panel-heading
-        .col-xs-8
-          %h3.panel-title= t('.table_title')
-        .col-xs-4
-      .panel-body
-        = render 'table'
-        = render 'pagination'
-    .stats
-    .news
 
+%section
+  .col-xs-offset-1.col-xs-10.home.white
+    %section
+      .col-xs-4
+        .controls.pull-left
+          %span.fui-gear
+          %span.glyphicon.glyphicon-repeat
+      .col-xs-8
+        .info.pull-right
+          =t('.update_time')
+
+    .row
+      .col-xs-4.vertical-menu
+        .panel.panel-default
+          .panel-heading
+            .col-xs-8
+              %h3.panel-title= t('.sortcut_menu_title')
+            .col-xs-4
+              .controls.pull-right
+                %span.fui-list
+            .clearfix
+          .panel-body
+            %ul.nav.nav-list
+              %li.nav-header= t('.crm')
+              %li.active= link_to t('.crm_item1'), root_path
+              %li= link_to t('.crm_item2'), root_path
+              %li= link_to t('.crm_item3'), root_path
+              %li= link_to t('.crm_item4'), root_path
+              %li.nav-header= t('.profiles')
+              %li= link_to t('.profiles_item1'), root_path
+              %li= link_to t('.profiles_item2'), root_path
+              %li= link_to t('.profiles_item3'), root_path
+              %li= link_to t('.profiles_item4'), root_path
+              %li= link_to t('.profiles_item5'), root_path
+              %li.nav-header= t('.reports')
+              %li= link_to t('.reports_item1'), root_path
+              %li= link_to t('.reports_item2'), root_path
+              %li= link_to t('.reports_item3'), root_path
+              %li= link_to t('.reports_item4'), root_path
+              %li= link_to t('.reports_item5'), root_path
+      .col-xs-8
+        .panel.panel-default
+          .panel-heading
+            .col-xs-8
+              %h3.panel-title= t('.table_title')
+            .col-xs-4
+              .controls.pull-right
+                %span.fui-list
+                %span.fui-export
+            .clearfix
+          .panel-body
+            = render 'table'
+            = render 'pagination'
+        .stats
+          .panel.panel-default
+            .panel-heading
+              .col-xs-8
+                %h3.panel-title= t('.stats_title')
+              .col-xs-4
+                .controls.pull-right
+                  %span.fui-list
+                  %span.fui-export
+              .clearfix
+            .panel-body
+              .row
+                .col-xs-12.text-center
+                  %ul
+                    %li.image= image_tag "PieChart1.png"
+                    %li.image= image_tag "PieChart2.png"
+                    %li.image= image_tag "PieChart3.png"
+        .news
+          .panel.panel-default
+            .panel-heading
+              .col-xs-8
+                %h3.panel-title= t('.news_title')
+              .col-xs-4
+                .controls.pull-right
+                  %span.fui-list
+                  %span.fui-export
+              .clearfix
+            .panel-body
+              .story
+                .story_title
+                  = t('.story_title')
+                .date
+                  = t('.story_date')
+                .story_text
+                  = t('.story_text')
+              .story
+                .story_title
+                  = t('.story_title')
+                .date
+                  = t('.story_date')
+                .story_text
+                  = t('.story_text')
+              .story
+                .story_title
+                  = t('.story_title')
+                .date
+                  = t('.story_date')
+                .story_text
+                  = t('.story_text')
+            .panel-footer
+              = t('.more')

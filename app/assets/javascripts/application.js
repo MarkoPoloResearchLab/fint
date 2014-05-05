@@ -15,4 +15,6 @@
 //= require turbolinks
 //= require bootstrap
 //= require flat-ui
+//= require flat-ui/flatui-checkbox
+//= require flat-ui/flatui-radio
 //= require_tree .

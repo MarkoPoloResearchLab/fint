@@ -18,12 +18,21 @@ en:
       filter: Filter
       update_time: "Last data update: 59 mins ago"
       table_title: Stock Market
+      sortcut_menu_title: Quick Shortcuts
+      stats_title: Pulp prices
+      news_title: News
+      story_title: New Story Title
+      story_date: "November 5th, 2012"
+      story_text: "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit." 
       crm: CRM
       crm_item1: Create New Opportunity
       crm_item2: "View Taskss & Appointments"
       crm_item3: "Create New Task & Appointment"
       crm_item4: Create New Case Study
+      home: Home
       profiles: Profiles
+      benchmark: Benchmark
+      reports: Create Report
       profiles_item1: View Sites
       profiles_item2: View Corporations
       profiles_item3: View Industries
@@ -55,3 +64,4 @@ en:
       table_r1c8:
       table_r1c9:
       table_r1c10:
+      more: Load More

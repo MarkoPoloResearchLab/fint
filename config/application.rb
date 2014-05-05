@@ -13,6 +13,7 @@ Bundler.require(:default, Rails.env)
 
 module Fisher
   class Application < Rails::Application
+    config.assets.paths << Rails.root.join("fonts")
 
     # don't generate RSpec tests for views and helpers
     config.generators do |g|
