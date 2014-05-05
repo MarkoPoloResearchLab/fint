@@ -1,0 +1,81 @@
+%table.table.table-bordered
+  %thead
+    %tr
+      %th
+        %label.checkbox.no-label.toggle-all{:for => "checkbox-table-1"}
+          %span.icons
+            %span.first-icon.fui-checkbox-unchecked
+            %span.second-icon.fui-checkbox-checked
+          %input#checkbox-table-1{"data-toggle" => "checkbox", :type => "checkbox", :value => ""}/
+      %th Rank
+      %th Name
+      %th Genre
+      %th Votes
+      %th Year
+      %th Rating
+  %tbody
+    %tr
+      %td
+        %label.checkbox.no-label{:for => "checkbox-table-2"}
+          %span.icons
+            %span.first-icon.fui-checkbox-unchecked
+            %span.second-icon.fui-checkbox-checked
+          %input#checkbox-table-2{"data-toggle" => "checkbox", :type => "checkbox", :value => ""}/
+      %td 1
+      %td The Shawshank Redemption
+      %td Crime, Drama
+      %td 923,629
+      %td 1994
+      %td.text-center 9.2
+    %tr.selected-row
+      %td
+        %label.checkbox.no-label.checked{:for => "checkbox-table-3"}
+          %span.icons
+            %span.first-icon.fui-checkbox-unchecked
+            %span.second-icon.fui-checkbox-checked
+          %input#checkbox-table-3{:checked => "checked", "data-toggle" => "checkbox", :type => "checkbox", :value => ""}/
+      %td 2
+      %td The Godfather
+      %td Crime, Drama
+      %td 663,133
+      %td 1972
+      %td.text-center 9.2
+    %tr.selected-row
+      %td
+        %label.checkbox.no-label.checked{:for => "checkbox-table-4"}
+          %span.icons
+            %span.first-icon.fui-checkbox-unchecked
+            %span.second-icon.fui-checkbox-checked
+          %input#checkbox-table-4{:checked => "checked", "data-toggle" => "checkbox", :type => "checkbox", :value => ""}/
+      %td 3
+      %td The Godfather: Part II
+      %td Crime, Drama
+      %td 427,132
+      %td 1974
+      %td.text-center 9.0
+    %tr
+      %td
+        %label.checkbox.no-label{:for => "checkbox-table-5"}
+          %span.icons
+            %span.first-icon.fui-checkbox-unchecked
+            %span.second-icon.fui-checkbox-checked
+          %input#checkbox-table-5{"data-toggle" => "checkbox", :type => "checkbox", :value => ""}/
+      %td 4
+      %td Pulp Fiction
+      %td Crime, Drama
+      %td 719,280
+      %td 1994
+      %td.text-center 8.9
+    %tr
+      %td
+        %label.checkbox.no-label{:for => "checkbox-table-6"}
+          %span.icons
+            %span.first-icon.fui-checkbox-unchecked
+            %span.second-icon.fui-checkbox-checked
+          %input#checkbox-table-6{"data-toggle" => "checkbox", :type => "checkbox", :value => ""}/
+      %td 5
+      %td The Good, the Bad and the Ugly
+      %td Adventure, Western
+      %td 218,887
+      %td 1966
+      %td.text-center 8.9

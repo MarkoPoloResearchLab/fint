@@ -1,0 +1,47 @@
+.row.horizontal-menu
+  %ul.nav.nav-tabs.nav-justified
+    %li.active= image_tag 'icon_home.png'
+    %li= image_tag 'icon_profiles.png'
+    %li= image_tag 'icon_reports.png'
+    %li= image_tag 'icon_benchmark.png'
+    %li= link_to t('.filter'), root_path, class: "btn btn-default"
+    = render 'switch'
+.row
+  .controls.pull-left
+    %span.glyphicon.glyphicon-repeat
+    %span.glyphicon.glyphicon-repeat
+  .info.pull-right
+    =t('.update_time')
+.row
+  .col-xs-4.vertical-menu
+    .panel
+      %ul.nav.nav-list
+        %li.nav-header= link_to t('.crm'), root_path
+        %li.active= link_to t('.crm_item1'), root_path
+        %li= link_to t('.crm_item2'), root_path
+        %li= link_to t('.crm_item3'), root_path
+        %li= link_to t('.crm_item4'), root_path
+        %li.nav-header= link_to t('.profiles'), root_path
+        %li= link_to t('.profiles_item1'), root_path
+        %li= link_to t('.profiles_item2'), root_path
+        %li= link_to t('.profiles_item3'), root_path
+        %li= link_to t('.profiles_item4'), root_path
+        %li= link_to t('.profiles_item5'), root_path
+        %li.nav-header= link_to t('.reports'), root_path
+        %li= link_to t('.reports_item1'), root_path
+        %li= link_to t('.reports_item2'), root_path
+        %li= link_to t('.reports_item3'), root_path
+        %li= link_to t('.reports_item4'), root_path
+        %li= link_to t('.reports_item5'), root_path
+  .col-xs-8
+    .panel.panel-default
+      .panel-heading
+        .col-xs-8
+          %h3.panel-title= t('.table_title')
+        .col-xs-4
+      .panel-body
+        = render 'table'
+        = render 'pagination'
+    .stats
+    .news
+

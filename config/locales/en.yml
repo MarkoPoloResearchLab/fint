@@ -1,0 +1,57 @@
+en:
+  layouts:
+    navigation:
+      action1: "Data from 2014, Q4"
+      action2: "Data from 2013, Q4"
+      action3: Something else here
+      action4: Separated link
+    navigation_links:
+      search: Search
+      help: Help Center
+      notifications: Notifications
+      account: Account
+  home:
+    pagination:
+      previous: ← Previous
+      next: Newer →
+    index:
+      filter: Filter
+      update_time: "Last data update: 59 mins ago"
+      table_title: Stock Market
+      crm: CRM
+      crm_item1: Create New Opportunity
+      crm_item2: "View Taskss & Appointments"
+      crm_item3: "Create New Task & Appointment"
+      crm_item4: Create New Case Study
+      profiles: Profiles
+      profiles_item1: View Sites
+      profiles_item2: View Corporations
+      profiles_item3: View Industries
+      profiles_item4: View Regions
+      profiles_item5: View Countries
+      reports: Create Reports
+      reports_item1: "Template: Create List of Machines"
+      reports_item2: "Template: Create List of Sites"
+      reports_item3: "Template: Create Distribution List"
+      reports_item4: "Template: Create Distribution List"
+      reports_item5: "Template: Create Distribution List"
+      table_header1: Name
+      table_header2: Genre
+      table_header3: Year
+      table_header4: Votes
+      table_header5: Year
+      table_header6: Rating
+      table_header7: Voters
+      table_header8: Average
+      table_header9: Country
+      table_header10: Producer
+      table_r1c1: The Shawshank Redemption
+      table_r1c2: "Crime, Drama"
+      table_r1c3: "923,629"
+      table_r1c4: 1994
+      table_r1c5: 9.2
+      table_r1c6: "923,629,000"
+      table_r1c7:
+      table_r1c8:
+      table_r1c9:
+      table_r1c10:
