@@ -24,8 +24,9 @@
     %section
       .col-xs-4
         .controls.pull-left
-          %span.fui-gear
-          %span.glyphicon.glyphicon-repeat
+          = image_tag 'settings.png'
+          / %span.fui-gear
+          / %span.glyphicon.glyphicon-repeat
       .col-xs-8
         .info.pull-right
           =t('.update_time')
@@ -100,13 +101,28 @@
                   %span.fui-export
               .clearfix
             .panel-body
-              = 3.times do
-                .story
-                  .story_title
-                    = t('.story_title')
-                  .date
-                    = t('.story_date')
-                  .story_text
-                    = t('.story_text')
+              .story
+                .story_title
+                  = t('.story_title')
+                .story_date
+                  = t('.story_date')
+                .story_text
+                  = t('.story_text')
+              %hr
+              .story
+                .story_title
+                  = t('.story_title')
+                .story_date
+                  = t('.story_date')
+                .story_text
+                  = t('.story_text')
+              %hr
+              .story
+                .story_title
+                  = t('.story_title')
+                .story_date
+                  = t('.story_date')
+                .story_text
+                  = t('.story_text')
             .panel-footer
               = t('.more')

@@ -5,7 +5,6 @@
 //= depend_on_asset "bootstrap/glyphicons-halflings-regular.woff"
 
 // import the CSS framework
-// @import "bootstrap";
 @import 'flat-ui/variables';
 @import 'bootstrap';
 @import 'flat-ui';
@@ -20,41 +19,88 @@ img {
   font-size: inherit;
   }
 
-// THESE ARE EXAMPLES YOU CAN MODIFY
-// create your own classes
-// to make views framework-neutral
 .column-and-a-half{
-  // @include make-xs-column(2.4);
   width: 12.498%;
   display: inline-block;
 }
 
+body {
+  font-size: medium;
+}
+
+// body {
+//   font-size: x-large;
+// }
+// @media (max-width: 1000px) {
+//   body { font-size: large; }
+// }
+// @media (max-width: 500px) {
+//   body { font-size: medium; }
+// }
+
+// @media (min-width: 1200px) {
+//   .horizontal-menu {
+//     p {
+//       @include title($white, 90%);
+//     }
+//   }
+// }
+
+// @media (min-width: 980px) and (max-width: $screen-sm-max) {
+//   .horizontal-menu {
+//     p {
+//       @include title($white, 70%);
+//     }
+//   }
+// }
+// @media (max-width: $screen-sm) {
+//   .horizontal-menu {
+//     p {
+//       @include title($white, 60%);
+//     }
+//   }
+// }
+
 .column {
   @extend .col-md-6;
   @extend .text-center;
-  }
+}
 .form {
   @extend .col-md-6;
-  }
+}
 .form-centered {
   @extend .col-md-6;
   @extend .text-center;
-  }
+}
 .submit {
   @extend .btn;
   @extend .btn-primary;
   @extend .btn-lg;
-  }
-// apply styles to HTML elements
-// to make views framework-neutral
+}
+
 main {
-  @extend .container;
+  // @extend .container;
+  @include container-fixed();
+
+  @media (min-width: $screen-sm) {
+    width: $container-sm;
+    font-size: small;
+  }
+  @media (min-width: $screen-md) {
+    width: $container-md;
+    font-size: normal;
+  }
+  @media (min-width: $screen-lg-min) {
+    width: $container-lg;
+    font-size: medium;
+  }
+
   background-color: #eee;
   padding-bottom: 80px;
   width: 100%;
   margin-top: 51px; // accommodate the navbar
-  }
+}
 section {
   @extend .row;
   margin-top: 20px;
-  }
+}

@@ -47,22 +47,41 @@
   vertical-align: middle;
 }
 
-.horizontal-menu {
-  height: 160px;
-}
-
 .home {
   margin-top: -70px;
 }
 
 .horizontal-menu {
+  height: 160px;
+
   p {
     @include title($white, 80%);
   }
 }
 
 .lightbulb {
+  position: absolute;
   background-color: $dark-grey;
+  right:0;
+  height: 53px;
+}
+
+.story {
+  .story_date {
+    font:{
+      style: italic;
+    }
+  }
+
+  .story_text {
+    padding-top: 20px;
+  }
+
+  .story_title {
+    font:{
+      weight: bold;
+    }
+  }
 }
 
 // Overrides
@@ -87,7 +106,7 @@
 
 span.navbar-new.green { 
   top: 20%; 
-  right: 30px;
+  right: 28px;
 }
 
 .navbar-nav > li > a {

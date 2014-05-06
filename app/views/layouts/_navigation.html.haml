@@ -1,18 +1,6 @@
--# navigation styled for Bootstrap 3.0
 %nav.navbar.navbar-default.navbar-fixed-top.white
+  = image_tag 'icon_lightbulb.png', class: "lightbulb"
   .container-fluid
-    -# .navbar-header
-      %button.navbar-toggle{"data-target" => ".navbar-collapse", "data-toggle" => "collapse", :type => "button"}
-        %span.sr-only Toggle navigation
-        %span.icon-bar
-        %span.icon-bar
-        %span.icon-bar
-      = link_to "Fisher International", "#", class: "navbar-brand"
-    .collapse.navbar-collapse
-      .col-xs-offset-1.col-xs-10
-        %ul.nav.navbar-nav.col-xs-12
-          = render 'layouts/navigation_links'
-
-      -#.col-xs-1.lightbulb
-        = image_tag 'icon_lightbulb.png'
-      
+    .col-xs-offset-1.col-xs-10
+      %ul.nav.navbar-nav.col-xs-12
+        = render 'layouts/navigation_links'
