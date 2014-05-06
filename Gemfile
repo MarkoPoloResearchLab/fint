@@ -12,7 +12,8 @@ gem 'haml-rails'
 gem 'mongoid', github: "mongoid/mongoid"
 gem 'thin'
 gem 'flat-ui-sass', github: 'wingrunr21/flat-ui-sass'
-gem 'rename'
+gem "term-ansicolor"
+# gem "bootstrap-switch-rails", github: "manuelvanrijn/bootstrap-switch-rails", tag: 'v1.3.1', branch: 'master'
 group :production do
   gem 'rails_12factor' 
 end

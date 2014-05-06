@@ -37,10 +37,14 @@
   height: auto;
   max-width: 100%;
   vertical-align: middle;
-  margin:{
+  margin: {
     top:100px;
     bottom: 100px;
   }
+}
+
+.logo {
+  vertical-align: middle;
 }
 
 .horizontal-menu {
@@ -56,6 +60,11 @@
     @include title($white, 80%);
   }
 }
+
+.lightbulb {
+  background-color: $dark-grey;
+}
+
 // Overrides
 .panel {
   @extend .cream;
@@ -74,6 +83,15 @@
   a {
     color: $light-grey;
   }
+}
+
+span.navbar-new.green { 
+  top: 20%; 
+  right: 30px;
+}
+
+.navbar-nav > li > a {
+  @include title(black, 80%);
 }
 
 // Pagination
@@ -629,8 +647,8 @@
   position: relative;
   text-align: left;
   width: 80px;
-  // -webkit-mask: url('../images/switch/mask.png') 0 0 no-repeat;
-  // mask: url('../images/switch/mask.png') 0 0 no-repeat;
+  -webkit-mask: image-url('mask.png') 0 0 no-repeat;
+  mask: image-url('mask.png') 0 0 no-repeat;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -751,4 +769,3 @@
 .switch-left {
   color: rgb(134, 209, 53);
 }
-

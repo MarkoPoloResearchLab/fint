@@ -1,11 +1,12 @@
 en:
   layouts:
-    navigation:
+    navigation_links:
       action1: "Data from 2014, Q4"
       action2: "Data from 2013, Q4"
       action3: Something else here
       action4: Separated link
-    navigation_links:
+      action5: Act now
+      action6: Or act later
       search: Search
       help: Help Center
       notifications: Notifications
