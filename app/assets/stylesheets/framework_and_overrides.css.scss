@@ -77,9 +77,18 @@ body {
   @extend .btn-primary;
   @extend .btn-lg;
 }
-
 main {
   // @extend .container;
+  background-color: #eee;
+  padding-bottom: 80px;
+  width: 100%;
+  margin-top: 51px; // accommodate the navbar
+}
+section {
+  @extend .row;
+  margin-top: 20px;
+}
+.home{
   @include container-fixed();
 
   @media (min-width: $screen-sm) {
@@ -94,13 +103,21 @@ main {
     width: $container-lg;
     font-size: medium;
   }
-
-  background-color: #eee;
-  padding-bottom: 80px;
-  width: 100%;
-  margin-top: 51px; // accommodate the navbar
 }
-section {
+.dashboard {
+  @extend .white;
   @extend .row;
-  margin-top: 20px;
+}
+
+ul.nav.navbar-nav {
+  @media (min-width: $screen-sm) {
+    font-size: .6em;
+  }
+
+  @media (min-width: $screen-md) {
+    font-size: .8em;
+  }
+  @media (min-width: $screen-lg-min) {
+    font-size: 1em;
+  }
 }

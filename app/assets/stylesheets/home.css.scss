@@ -1,3 +1,6 @@
+@import 'flat-ui/variables';
+@import 'bootstrap';
+@import 'flat-ui';
 @import 'colors';
 
 @mixin title($color: $white, $size: 90%){
@@ -10,12 +13,16 @@
   background-color: $green;
 }
 
-.toxic-green{
+.toxic-green {
   background-color: $toxic-green;
 }
 
 .grey {
   background-color: $grey;
+}
+
+.dark-grey {
+  background-color: $dark-grey;
 }
 
 .white {
@@ -29,6 +36,7 @@
 .stats li {
   width: 33.3%;
   float: left;
+  padding-right: 5%;
 }
 
 .image {
@@ -47,15 +55,20 @@
   vertical-align: middle;
 }
 
-.home {
-  margin-top: -70px;
+.selected{
+  @extend .dark-grey;
+}
+
+.grey-stripe {
+  @extend .grey;
+  @extend .container-fluid;
+  height: 160px;
 }
 
 .horizontal-menu {
-  height: 160px;
-
+  margin-top: -150px;
   p {
-    @include title($white, 80%);
+    @include title($white, .8em);
   }
 }
 
