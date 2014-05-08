@@ -20,12 +20,13 @@
             = image_tag 'icon_benchmark.png'
             %p= t('.benchmark')
         .col-xs-4.pull-right
-          = link_to t('.filter'), root_path, class: "btn btn-default btn-wide toxic-green"
-          = render 'switch'
+          .filter
+            = link_to t('.filter'), root_path, class: "btn btn-default btn-wide toxic-green vcenter"
+            = render 'switch'
 
       / .content
-      
-      .dashboard.white
+
+      .dashboard
         .col-xs-4
           .controls.pull-left
             = image_tag 'settings.png'

@@ -97,6 +97,22 @@
   }
 }
 
+.filter{
+  @include center-block;
+  // padding-top: 30px;
+  // @extend .pagination-centered;
+  // vertical-align:middle;
+}
+
+.vcenter{
+  vertical-align: middle;
+}
+
+.dashboard {
+  @extend .white;
+  @extend .row;
+}
+
 // Overrides
 .panel {
   @extend .cream;

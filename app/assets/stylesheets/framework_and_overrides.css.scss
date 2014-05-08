@@ -28,39 +28,6 @@ body {
   font-size: medium;
 }
 
-// body {
-//   font-size: x-large;
-// }
-// @media (max-width: 1000px) {
-//   body { font-size: large; }
-// }
-// @media (max-width: 500px) {
-//   body { font-size: medium; }
-// }
-
-// @media (min-width: 1200px) {
-//   .horizontal-menu {
-//     p {
-//       @include title($white, 90%);
-//     }
-//   }
-// }
-
-// @media (min-width: 980px) and (max-width: $screen-sm-max) {
-//   .horizontal-menu {
-//     p {
-//       @include title($white, 70%);
-//     }
-//   }
-// }
-// @media (max-width: $screen-sm) {
-//   .horizontal-menu {
-//     p {
-//       @include title($white, 60%);
-//     }
-//   }
-// }
-
 .column {
   @extend .col-md-6;
   @extend .text-center;
@@ -103,10 +70,6 @@ section {
     width: $container-lg;
     font-size: medium;
   }
-}
-.dashboard {
-  @extend .white;
-  @extend .row;
 }
 
 ul.nav.navbar-nav {
