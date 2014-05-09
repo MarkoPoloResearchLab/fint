@@ -21,7 +21,7 @@
             %p= t('.benchmark')
         .col-xs-4.pull-right
           .filter
-            = link_to t('.filter'), root_path, class: "wide-green-button pull-left center-y"
+            = link_to t('.filter'), "#", class: "wide-green-button pull-left center-y", data:{toggle: "modal", target: "#myModal"}
             .pull-right.center-y
               .switch.has-switch
                 .switch-on.switch-animate
@@ -135,4 +135,14 @@
                     = t('.story_text')
               .panel-footer
                 = t('.more')
-          
+#myModal.modal.fade{"aria-hidden" => "true", "aria-labelledby" => "myModalLabel", :role => "dialog", :tabindex => "-1"}
+  .modal-dialog
+    .modal-content
+      .modal-header
+        %button.close{"aria-hidden" => "true", "data-dismiss" => "modal", :type => "button"} &times;
+        %h4#myModalLabel.modal-title Modal title
+      .modal-body
+        %p Modal content
+      .modal-footer
+        %button.btn.btn-default{"data-dismiss" => "modal", :type => "button"} Close
+        %button.btn.btn-primary{:type => "button"} Save changes
