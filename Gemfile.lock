@@ -1,4 +1,10 @@
 GIT
+  remote: git://github.com/manuelvanrijn/bootstrap-switch-rails.git
+  revision: dcf4be66491fc166f8993f8540bb004778ae0e72
+  specs:
+    bootstrap-switch-rails (3.0.0)
+
+GIT
   remote: git://github.com/mongoid/mongoid.git
   revision: e93a4837b0266db46c24aae172e184f57c847b04
   specs:
@@ -250,6 +256,7 @@ DEPENDENCIES
   better_errors
   binding_of_caller
   bootstrap-sass
+  bootstrap-switch-rails!
   capybara
   coffee-rails (~> 4.0.0)
   database_cleaner (= 1.0.1)

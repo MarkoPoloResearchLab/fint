@@ -21,28 +21,32 @@
             %p= t('.benchmark')
         .col-xs-4.pull-right
           .filter
-            = link_to t('.filter'), root_path, class: "btn btn-default btn-wide toxic-green vcenter"
-            = render 'switch'
-
-      / .content
+            = link_to t('.filter'), root_path, class: "wide-green-button pull-left center-y"
+            .pull-right.center-y
+              .switch.has-switch
+                .switch-on.switch-animate
+                  %input{checked: "", "data-toggle" => "switch", type: "checkbox"}/
+                  %span.switch-left ON
+                  %label &nbsp;
+                  %span.switch-right OFF
 
       .dashboard
-        .col-xs-4
+        .left-column
           .controls.pull-left
             = image_tag 'settings.png'
             / %span.fui-gear
             / %span.glyphicon.glyphicon-repeat
-        .col-xs-8
+        .right-column
           .info.pull-right
             =t('.update_time')
         .clearfix
         .row
-        .col-xs-4.vertical-menu
+        .left-column.vertical-menu
           .panel.panel-default
             .panel-heading
-              .col-xs-8
+              .right-column
                 %h3.panel-title= t('.sortcut_menu_title')
-              .col-xs-4
+              .left-column
                 .controls.pull-right
                   %span.fui-list
               .clearfix
@@ -65,12 +69,12 @@
                 %li= link_to t('.reports_item3'), root_path
                 %li= link_to t('.reports_item4'), root_path
                 %li= link_to t('.reports_item5'), root_path
-        .col-xs-8
+        .right-column
           .panel.panel-default
             .panel-heading
-              .col-xs-8
+              .right-column
                 %h3.panel-title= t('.table_title')
-              .col-xs-4
+              .left-column
                 .controls.pull-right
                   %span.fui-list
                   %span.fui-export
@@ -81,9 +85,9 @@
           .stats
             .panel.panel-default
               .panel-heading
-                .col-xs-8
+                .right-column
                   %h3.panel-title= t('.stats_title')
-                .col-xs-4
+                .left-column
                   .controls.pull-right
                     %span.fui-list
                     %span.fui-export
@@ -98,9 +102,9 @@
           .news
             .panel.panel-default
               .panel-heading
-                .col-xs-8
+                .right-column
                   %h3.panel-title= t('.news_title')
-                .col-xs-4
+                .left-column
                   .controls.pull-right
                     %span.fui-list
                     %span.fui-export

@@ -5,4 +5,4 @@ enableBSSwitch = ->
     .bootstrapSwitch()
 
 $ ->
- enableBSSwitch()
+  # enableBSSwitch()

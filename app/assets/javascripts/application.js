@@ -14,6 +14,7 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require bootstrap
+//= require bootstrap-switch
 //= require flat-ui
 //= require flat-ui/flatui-checkbox
 //= require flat-ui/flatui-radio

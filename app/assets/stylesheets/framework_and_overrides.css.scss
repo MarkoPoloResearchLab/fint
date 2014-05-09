@@ -7,6 +7,7 @@
 // import the CSS framework
 @import 'flat-ui/variables';
 @import 'bootstrap';
+// @import "bootstrap3-switch";
 @import 'flat-ui';
 
 // make all images responsive by default
@@ -22,21 +23,34 @@ img {
 .column-and-a-half{
   width: 12.498%;
   display: inline-block;
+  // display: table-cell;
+}
+
+html, body {
+  height:100%;
 }
 
 body {
   font-size: medium;
 }
 
+.left-column {
+  @extend .col-xs-4;
+}
+
+.right-column {
+  @extend .col-xs-8;
+}
+
 .column {
-  @extend .col-md-6;
+  @extend .col-xs-6;
   @extend .text-center;
 }
 .form {
-  @extend .col-md-6;
+  @extend .col-xs-6;
 }
 .form-centered {
-  @extend .col-md-6;
+  @extend .col-xs-6;
   @extend .text-center;
 }
 .submit {
