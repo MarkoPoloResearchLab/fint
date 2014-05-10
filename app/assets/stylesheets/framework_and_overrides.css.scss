@@ -41,11 +41,11 @@ body {
 }
 
 .left-column {
-  @extend .col-xs-4;
+  @extend .col-xs-3;
 }
 
 .right-column {
-  @extend .col-xs-8;
+  @extend .col-xs-9;
 }
 
 .column {

@@ -34,8 +34,6 @@
         .left-column
           .controls.pull-left
             = image_tag 'settings.png'
-            / %span.fui-gear
-            / %span.glyphicon.glyphicon-repeat
         .right-column
           .info.pull-right
             =t('.update_time')
@@ -44,12 +42,9 @@
         .left-column.vertical-menu
           .panel.panel-default
             .panel-heading
-              .right-column
-                %h3.panel-title= t('.sortcut_menu_title')
-              .left-column
-                .controls.pull-right
-                  %span.fui-list
-              .clearfix
+              %h3.panel-title.text-left
+                = t('.sortcut_menu_title')
+                %span.fui-list.pull-right.black
             .panel-body
               %ul.nav.nav-list
                 %li.nav-header= t('.crm')
@@ -72,26 +67,22 @@
         .right-column
           .panel.panel-default
             .panel-heading
-              .right-column
-                %h3.panel-title= t('.table_title')
-              .left-column
-                .controls.pull-right
+              %h3.panel-title.text-left
+                = t('.table_title')
+                .controls.pull-right.black
                   %span.fui-list
                   %span.fui-export
-              .clearfix
             .panel-body
               = render 'table'
               = render 'pagination'
           .stats
             .panel.panel-default
               .panel-heading
-                .right-column
-                  %h3.panel-title= t('.stats_title')
-                .left-column
-                  .controls.pull-right
+                %h3.panel-title.text-left
+                  = t('.stats_title')
+                  .controls.pull-right.black
                     %span.fui-list
                     %span.fui-export
-                .clearfix
               .panel-body
                 .row
                   .col-xs-12.text-center
@@ -102,13 +93,12 @@
           .news
             .panel.panel-default
               .panel-heading
-                .right-column
-                  %h3.panel-title= t('.news_title')
-                .left-column
-                  .controls.pull-right
+                %h3.panel-title.text-left
+                  = t('.news_title')
+                  .controls.pull-right.black
                     %span.fui-list
                     %span.fui-export
-                .clearfix
+                
               .panel-body
                 .story
                   .story_title
@@ -136,14 +126,14 @@
               .panel-footer
                 = t('.more')
 
-#myModal.modal.fade{"aria-hidden" => "true", "aria-labelledby" => "myModalLabel", :role => "dialog", :tabindex => "-1"}
+#myModal.modal.fade{"aria-hidden" => "true", "aria-labelledby" => "myModalLabel", role: "dialog", tabindex: "-1"}
   .modal-dialog
     .modal-content
       .modal-header
-        %button.close{"aria-hidden" => "true", "data-dismiss" => "modal", :type => "button"} &times;
+        %button.close{"aria-hidden" => "true", "data-dismiss" => "modal", type: "button"} &times;
         %h4#myModalLabel.modal-title Modal title
       .modal-body
         %p Modal content
       .modal-footer
-        %button.btn.btn-default{"data-dismiss" => "modal", :type => "button"} Close
+        %button.btn.btn-default{"data-dismiss" => "modal", type: "button"} Close
         %button.btn.btn-primary{:type => "button"} Save changes
