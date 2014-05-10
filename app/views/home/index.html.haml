@@ -44,26 +44,30 @@
             .panel-heading
               %h3.panel-title.text-left
                 = t('.sortcut_menu_title')
-                %span.fui-list.pull-right.black
-            .panel-body
-              %ul.nav.nav-list
-                %li.nav-header= t('.crm')
-                %li.active= link_to t('.crm_item1'), root_path
-                %li= link_to t('.crm_item2'), root_path
-                %li= link_to t('.crm_item3'), root_path
-                %li= link_to t('.crm_item4'), root_path
-                %li.nav-header= t('.profiles')
-                %li= link_to t('.profiles_item1'), root_path
-                %li= link_to t('.profiles_item2'), root_path
-                %li= link_to t('.profiles_item3'), root_path
-                %li= link_to t('.profiles_item4'), root_path
-                %li= link_to t('.profiles_item5'), root_path
-                %li.nav-header= t('.reports')
-                %li= link_to t('.reports_item1'), root_path
-                %li= link_to t('.reports_item2'), root_path
-                %li= link_to t('.reports_item3'), root_path
-                %li= link_to t('.reports_item4'), root_path
-                %li= link_to t('.reports_item5'), root_path
+                .controls.pull-right.black
+                  %span.fui-list
+                  =link_to "#shortcut_menu_panel", data:{toggle: "collapse"}  do
+                    %span.fui-arrow-right
+            #shortcut_menu_panel.panel-collapse.collapse.in
+              .panel-body
+                %ul.nav.nav-list
+                  %li.nav-header= t('.crm')
+                  %li.active= link_to t('.crm_item1'), root_path
+                  %li= link_to t('.crm_item2'), root_path
+                  %li= link_to t('.crm_item3'), root_path
+                  %li= link_to t('.crm_item4'), root_path
+                  %li.nav-header= t('.profiles')
+                  %li= link_to t('.profiles_item1'), root_path
+                  %li= link_to t('.profiles_item2'), root_path
+                  %li= link_to t('.profiles_item3'), root_path
+                  %li= link_to t('.profiles_item4'), root_path
+                  %li= link_to t('.profiles_item5'), root_path
+                  %li.nav-header= t('.reports')
+                  %li= link_to t('.reports_item1'), root_path
+                  %li= link_to t('.reports_item2'), root_path
+                  %li= link_to t('.reports_item3'), root_path
+                  %li= link_to t('.reports_item4'), root_path
+                  %li= link_to t('.reports_item5'), root_path
         .right-column
           .panel.panel-default
             .panel-heading
@@ -71,10 +75,12 @@
                 = t('.table_title')
                 .controls.pull-right.black
                   %span.fui-list
-                  %span.fui-export
-            .panel-body
-              = render 'table'
-              = render 'pagination'
+                  =link_to "#table_panel", data:{toggle: "collapse"}  do
+                    %span.fui-arrow-right
+            #table_panel.panel-collapse.collapse.in 
+              .panel-body
+                = render 'table'
+                = render 'pagination'
           .stats
             .panel.panel-default
               .panel-heading
@@ -82,14 +88,16 @@
                   = t('.stats_title')
                   .controls.pull-right.black
                     %span.fui-list
-                    %span.fui-export
-              .panel-body
-                .row
-                  .col-xs-12.text-center
-                    %ul
-                      %li.image= image_tag "PieChart1.png"
-                      %li.image= image_tag "PieChart2.png"
-                      %li.image= image_tag "PieChart3.png"
+                    =link_to "#stats_panel", data:{toggle: "collapse"}  do
+                      %span.fui-arrow-right
+              #stats_panel.panel-collapse.collapse.in  
+                .panel-body
+                  .row
+                    .col-xs-12.text-center
+                      %ul
+                        %li.image= image_tag "PieChart1.png"
+                        %li.image= image_tag "PieChart2.png"
+                        %li.image= image_tag "PieChart3.png"
           .news
             .panel.panel-default
               .panel-heading
@@ -97,34 +105,35 @@
                   = t('.news_title')
                   .controls.pull-right.black
                     %span.fui-list
-                    %span.fui-export
-                
-              .panel-body
-                .story
-                  .story_title
-                    = t('.story_title')
-                  .story_date
-                    = t('.story_date')
-                  .story_text
-                    = t('.story_text')
-                %hr
-                .story
-                  .story_title
-                    = t('.story_title')
-                  .story_date
-                    = t('.story_date')
-                  .story_text
-                    = t('.story_text')
-                %hr
-                .story
-                  .story_title
-                    = t('.story_title')
-                  .story_date
-                    = t('.story_date')
-                  .story_text
-                    = t('.story_text')
-              .panel-footer
-                = t('.more')
+                    =link_to "#news_panel", data:{toggle: "collapse"}  do
+                      %span.fui-arrow-right
+              #news_panel.panel-collapse.collapse.in  
+                .panel-body
+                  .story
+                    .story_title
+                      = t('.story_title')
+                    .story_date
+                      = t('.story_date')
+                    .story_text
+                      = t('.story_text')
+                  %hr
+                  .story
+                    .story_title
+                      = t('.story_title')
+                    .story_date
+                      = t('.story_date')
+                    .story_text
+                      = t('.story_text')
+                  %hr
+                  .story
+                    .story_title
+                      = t('.story_title')
+                    .story_date
+                      = t('.story_date')
+                    .story_text
+                      = t('.story_text')
+                .panel-footer
+                  = t('.more')
 
 #myModal.modal.fade{"aria-hidden" => "true", "aria-labelledby" => "myModalLabel", role: "dialog", tabindex: "-1"}
   .modal-dialog
