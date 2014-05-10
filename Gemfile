@@ -14,9 +14,9 @@ gem 'thin'
 gem 'flat-ui-sass', github: 'wingrunr21/flat-ui-sass'
 gem "term-ansicolor"
 gem "bootstrap-switch-rails", github: "manuelvanrijn/bootstrap-switch-rails"
-group :production do
-  gem 'rails_12factor' 
-end
+# group :production do
+#   gem 'rails_12factor' 
+# end
 group :development do
   gem 'better_errors'
   gem 'binding_of_caller', platforms: [:mri_19, :mri_20, :mri_21, :rbx]
@@ -40,3 +40,5 @@ group :test do
   gem 'email_spec'
   gem 'mongoid-rspec', '>= 1.10.0'
 end
+
+gem 'rails_12factor'
