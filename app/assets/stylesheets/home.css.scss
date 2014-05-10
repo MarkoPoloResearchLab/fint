@@ -1,9 +1,15 @@
+$screen-sm-min: 768px;
+$screen-md-min: 980px;
+$screen-lg-min: 1200px;
+
 @import 'flat-ui/variables';
+$grid-float-breakpoint: $screen-md-min;
+
 @import 'bootstrap';
 @import 'flat-ui';
 @import 'colors';
 
-@mixin title($color: $white, $size: 90%){
+@mixin title($color: $white, $size: .9em){
   color: $color;
   text-transform: uppercase;
   font-size: $size;
@@ -158,5 +164,5 @@ span.navbar-new.green {
 }
 
 .navbar-nav > li > a {
-  @include title(black, 80%);
+  @include title(black, .6em);
 }
