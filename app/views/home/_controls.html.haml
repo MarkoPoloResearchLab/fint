@@ -1,7 +1,7 @@
-
 .dropdown.pull-right
   %span.fui-list.black.dropdown-toggle{"data-toggle" => "dropdown", id: "##{dropdown_id}"}
   %ul.dropdown-menu{"aria-labelledby" => "#{dropdown_id}", role: "menu"}
+    -# %li.dropdown-header{role: "presentation"} Dropdown header
     %li{role: "presentation"}
       = link_to "#", role: "menuitem", tabindex: "-1" do
         =t('.action1')

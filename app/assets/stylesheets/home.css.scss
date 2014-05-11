@@ -97,6 +97,14 @@ $grid-float-breakpoint: $screen-md-min;
   height: 53px;
 }
 
+.dropdown-header {
+  font-size: .7em;
+}
+
+.dropdown-menu {
+  font-size: .8em;
+}
+
 span.fui-plus, span.fui-cross, .dropdown-toggle {
   cursor: pointer;
 }
