@@ -1,0 +1,19 @@
+=link_to "##{link_id}", class: "pull-right", data:{toggle: "collapse"}  do
+  %span.fui-arrow-right.black
+
+.dropdown.pull-right
+  %span.fui-list.black.dropdown-toggle{"data-toggle" => "dropdown", id: "##{dropdown_id}"}
+  %ul.dropdown-menu{"aria-labelledby" => "#{dropdown_id}", role: "menu"}
+    %li{role: "presentation"}
+      = link_to "#", role: "menuitem", tabindex: "-1" do
+        =t('.action1')
+    %li{role: "presentation"}
+      = link_to "#", role: "menuitem", tabindex: "-1" do
+        =t('.action2')
+    %li{role: "presentation"}
+      = link_to "#", role: "menuitem", tabindex: "-1" do
+        =t('.action3')
+    %li.divider{role: "presentation"}
+    %li{role: "presentation"}
+      = link_to "#", role: "menuitem", tabindex: "-1" do
+        =t('.action4')

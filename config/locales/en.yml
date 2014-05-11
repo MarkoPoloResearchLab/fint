@@ -12,6 +12,11 @@ en:
       notifications: Notifications
       account: Account
   home:
+    controls:
+      action1: Act now
+      action2: Or act later
+      action3: Something else here
+      action4: Separated link
     pagination:
       previous: ← Previous
       next: Newer →

@@ -97,6 +97,10 @@ $grid-float-breakpoint: $screen-md-min;
   height: 53px;
 }
 
+.dropdown-toggle {
+  cursor: pointer;
+}
+
 .story {
   .story_date {
     font:{
