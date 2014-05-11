@@ -1,7 +1,4 @@
 
-=link_to "##{link_id}", class: "pull-right", data:{toggle: "collapse"}  do
-  %span.fui-arrow-right.black
-
 .dropdown.pull-right
   %span.fui-list.black.dropdown-toggle{"data-toggle" => "dropdown", id: "##{dropdown_id}"}
   %ul.dropdown-menu{"aria-labelledby" => "#{dropdown_id}", role: "menu"}
@@ -18,5 +15,6 @@
     %li{role: "presentation"}
       = link_to "#", role: "menuitem", tabindex: "-1" do
         =t('.action4')
-
+=link_to "##{link_id}", class: "pull-right", data:{toggle: "collapse"}  do
+  %span.fui-arrow-right.black
 %span.fui-plus.black.pull-right

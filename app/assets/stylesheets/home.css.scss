@@ -84,9 +84,9 @@ $grid-float-breakpoint: $screen-md-min;
 }
 
 .horizontal-menu {
-  margin-top: -150px;
+  margin-top: -130px;
   p {
-    @include title($white, .7em);
+    @include title($white, 1em);
   }
 }
 
@@ -152,7 +152,7 @@ span.fui-plus, span.fui-cross, .dropdown-toggle {
 }
 
 .panel-title {
-  @include title($green,.7em);
+  @include title($green,.8em);
 }
 
 .panel-footer {
