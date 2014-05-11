@@ -154,6 +154,19 @@ span.fui-plus, span.fui-cross, .dropdown-toggle {
   @extend .row;
 }
 
+.dashboard-info{
+  height: 42px;
+}
+
+.info {
+  @extend %vertical-align;
+  font-size: .9em;
+}
+
+tbody > tr > td {
+  font-size: .7em;
+}
+
 // Overrides
 .panel {
   @extend .cream;

@@ -30,11 +30,12 @@
 
   .dashboard
     .left-column
-      .controls.pull-left
+      .pull-left
         = image_tag 'settings.png'
     .right-column
-      .info.pull-right
-        =t('.update_time')
+      .dashboard-info
+        .info.text-right
+          =t('.update_time')
     .clearfix
     .left-column
       .vertical-menu
@@ -43,7 +44,6 @@
             %h3.panel-title.text-left
               = t('.sortcut_menu_title')
               = render 'controls', link_id: "shortcut_menu_panel", dropdown_id: "dd1"
-            
           #shortcut_menu_panel.panel-collapse.collapse.in
             .panel-body
               %ul.nav.nav-list
