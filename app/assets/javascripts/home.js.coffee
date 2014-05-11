@@ -20,30 +20,24 @@ changeIconOnCollapse = ->
 
 resizeElement = ->
   $("span.fui-plus").click ->
-    $( this )
+    panel = $(this)
       .removeClass "fui-plus"
       .addClass "fui-cross"
-      .parent()
-      .parent()
-      .parent()
-      .wrapAll "<div class='fullscreen' />"
+      .parents().eq(3)
+    panel.before "<div class='placeholder' />"
+    $(".dashboard").before panel
+    $(".dashboard").hide()
+    resizeElement()
 
-    $('html, body').css({
-      'overflow': 'hidden',
-      'height': '100%'
-    })
-
-    $("span.fui-cross").click ->
-      $( this )
-        .removeClass "fui-cross"
-        .addClass "fui-plus"
-      $(".fullscreen").replaceWith -> 
-        $(this).contents()
-      $('html, body').css({
-        'overflow': 'auto',
-        'height': 'auto'
-      })
-      resizeElement()
+  $("span.fui-cross").click ->
+    panel = $(this)
+      .removeClass "fui-cross"
+      .addClass "fui-plus"
+      .parents().eq(3)
+    $(".placeholder").replaceWith ->
+      panel
+    $(".dashboard").show()
+    resizeElement()
 
 $ ->
   # enableBSSwitch()
