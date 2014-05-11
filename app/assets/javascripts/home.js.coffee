@@ -18,6 +18,34 @@ changeIconOnCollapse = ->
       .removeClass "fui-arrow-left"
       .addClass "fui-arrow-right"
 
+resizeElement = ->
+  $("span.fui-plus").click ->
+    $( this )
+      .removeClass "fui-plus"
+      .addClass "fui-cross"
+      .parent()
+      .parent()
+      .parent()
+      .wrapAll "<div class='fullscreen' />"
+
+    $('html, body').css({
+      'overflow': 'hidden',
+      'height': '100%'
+    })
+
+    $("span.fui-cross").click ->
+      $( this )
+        .removeClass "fui-cross"
+        .addClass "fui-plus"
+      $(".fullscreen").replaceWith -> 
+        $(this).contents()
+      $('html, body').css({
+        'overflow': 'auto',
+        'height': 'auto'
+      })
+      resizeElement()
+
 $ ->
   # enableBSSwitch()
   changeIconOnCollapse()
+  resizeElement()
