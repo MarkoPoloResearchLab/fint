@@ -4,6 +4,10 @@ enableBSSwitch = ->
     .parent()
     .bootstrapSwitch()
 
+enableTooltips = ->
+  $("[data-toggle='tooltip']")
+    .tooltip()
+
 changeIconOnCollapse = ->
   $(".panel-collapse.collapse.in").on 'hidden.bs.collapse', ->
     $(this)
@@ -41,5 +45,6 @@ resizeElement = ->
 
 $ ->
   # enableBSSwitch()
+  enableTooltips()
   changeIconOnCollapse()
   resizeElement()

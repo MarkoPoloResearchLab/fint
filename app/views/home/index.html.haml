@@ -19,14 +19,13 @@
         %p= t('.benchmark')
     .col-xs-4.pull-right
       .filter
-        = link_to t('.filter'), "#", class: "wide-green-button pull-left center-y", data:{toggle: "modal", target: "#myModal"}
-        .pull-right.center-y
-          .switch.has-switch
-            .switch-on.switch-animate
-              %input{checked: "", "data-toggle" => "switch", type: "checkbox"}/
-              %span.switch-left ON
-              %label &nbsp;
-              %span.switch-right OFF
+        .switch.has-switch.center-y.pull-right
+          .switch-on.switch-animate
+            %input{checked: "", "data-toggle" => "switch", type: "checkbox"}/
+            %span.switch-left ON
+            %label &nbsp;
+            %span.switch-right OFF
+        = link_to t('.filter'), "#", class: "wide-green-button pull-right center-y", data:{toggle: "modal", target: "#myModal"}
 
   .dashboard
     .left-column
@@ -43,7 +42,7 @@
           .panel-heading
             %h3.panel-title.text-left
               = t('.sortcut_menu_title')
-              = render 'controls', link_id: "shortcut_menu_panel", dropdown_id: "dd1"
+              =render 'dropdown_menu', dropdown_id: "dd1"
           #shortcut_menu_panel.panel-collapse.collapse.in
             .panel-body
               %ul.nav.nav-list

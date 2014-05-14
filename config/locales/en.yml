@@ -13,6 +13,10 @@ en:
       account: Account
   home:
     controls:
+      collapse: Collapse
+      resize: Fullscreen
+    dropdown_menu:
+      menu: Menu Options
       action1: Act now
       action2: Or act later
       action3: Something else here
@@ -23,8 +27,8 @@ en:
     index:
       filter: Filter
       update_time: "Last data update: 59 mins ago"
-      table_title: Stock Market
-      sortcut_menu_title: Quick Shortcuts
+      table_title: Favorite Sites
+      sortcut_menu_title: Shortcuts
       stats_title: Pulp prices
       news_title: News
       story_title: New Story Title

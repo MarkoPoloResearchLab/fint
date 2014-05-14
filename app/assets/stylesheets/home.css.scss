@@ -86,7 +86,7 @@ $grid-float-breakpoint: $screen-md-min;
 .horizontal-menu {
   margin-top: -130px;
   p {
-    @include title($white, 1em);
+    @include title($white, small);
   }
 }
 
@@ -194,4 +194,8 @@ span.navbar-new.green {
 
 .navbar-nav > li > a {
   @include title(black, .7em);
+}
+
+.nav.nav-list > li:not(.nav-header) {
+  font-size: small;
 }

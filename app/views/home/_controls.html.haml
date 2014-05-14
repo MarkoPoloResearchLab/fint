@@ -1,20 +1,4 @@
-.dropdown.pull-right
-  %span.fui-list.black.dropdown-toggle{"data-toggle" => "dropdown", id: "##{dropdown_id}"}
-  %ul.dropdown-menu{"aria-labelledby" => "#{dropdown_id}", role: "menu"}
-    -# %li.dropdown-header{role: "presentation"} Dropdown header
-    %li{role: "presentation"}
-      = link_to "#", role: "menuitem", tabindex: "-1" do
-        =t('.action1')
-    %li{role: "presentation"}
-      = link_to "#", role: "menuitem", tabindex: "-1" do
-        =t('.action2')
-    %li{role: "presentation"}
-      = link_to "#", role: "menuitem", tabindex: "-1" do
-        =t('.action3')
-    %li.divider{role: "presentation"}
-    %li{role: "presentation"}
-      = link_to "#", role: "menuitem", tabindex: "-1" do
-        =t('.action4')
+=render 'dropdown_menu', dropdown_id: dropdown_id
 =link_to "##{link_id}", class: "pull-right", data:{toggle: "collapse"}  do
-  %span.fui-arrow-right.black
-%span.fui-plus.black.pull-right
+  %span.fui-arrow-right.black{data:{toggle: "tooltip", placement: "top", title: "#{t('.collapse')}"}}
+%span.fui-plus.black.pull-right{data:{toggle: "tooltip", placement: "left", title: "#{t('.resize')}"}}
