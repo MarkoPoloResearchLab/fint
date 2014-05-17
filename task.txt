@@ -1,0 +1,108 @@
+We will be using a 12-column grid system. The following is the breakdown for container-width dimensions (these are standard responsive bootstrap grids):
+
+Viewport minimum width: 1200px
+*** Container width  = 1170px 
+
+Viewport minimum width: 980px
+*** Container width = 940px 
+
+Viewport minimum width: 768px (max width 979px)
+Container width  = 768px 
+
+We don't care what happens for screens smaller than 768. In fact, the first two are way more important than the tablet-size screens.
+
+This is really a single-page mockup and nothing has to really "work". The most important thing to show in this mockup is that all these containers are responsive (i.e. everything adjusts when user changes screen size). All the data can be just dummy data. Icons can be placeholders. Some things to note that are needed that are not shown in attached mockup: 
+
+- The table should show at least 10 columns (unlike in attached image). In real app, tables will have their own horizontal scrollbar if # of columns exceeds width. 
+
+- The table should have 10 rows with pagination to show other rows (unlike in attached image). 
+
+- The charts can just be static images for now
+
+- In Quick Shortcuts panel on the left, the items that are bold (CRM/Profiles/Create Reports) are just headings. The items within them are Links. These can just be broken links that change background color on mouseover. 
+
+- No need to build out navigation. Just a different color when mousing over selection would do
+
+- "Filter" is a button that will open up to a modal window. That window could be empty. The on/off should just show that user can toggle (nothing needs to happen). 
+
+- Panels:
+
+- Would be nice if the collapse / expand buttons worked (the triangles). 
+- Would be nice if hamburger menus opened up to dummy dropdown menu (like from Flat UI kit) 
+- For future: Depending on how difficult it is to build this out for prototype - the fullscreen button on the right panels would make the panel full width and hide all other panels. The button would turn to "exit fullscreen" button to return to regular view. 
+
+First draft: comments
+
+The container (the center content with the white background) looks like it's 975px wide, even on larger screens - can we make that at least 1170px for viewports of 1200px and greater?
+-- Done
+
+When user's screen is less than 1200,  can we make the margins (the light grey space around the white content container) way smaller so that more of the content container fits the screen? In the design I am trying to give the content a good amount of breathing room on the sides, but for screens less than 1200 we really need to make sure there is enough space for the content
+-- Done
+
+In the design, the left panel (Quick Shortcuts) is actually 3 columns wide, and the right panels (table and panels below it) are 9 columns wide. Any chance to reflect that here? I think it would work well if the whole content container is larger. 
+-- Done
+
+Once we have that, it would be great to have the data table show more data columns (at least 10 of any random data) and 10 rows. 
+-- Done
+
+Could you please add an on/off toggle next to the filter button and align it (with button) all the way to the right of the white content container? 
+-- Done
+
+Would be nice if the collapse / expand buttons worked (the triangles). 
+-- Done
+
+Would be nice if hamburger menus in panels opened up to dummy dropdown menu 
+-- Done
+
+Second draft: comments
+
+i can't tell where you are defining container width for screen sizes between 990px-1200px, can we please increase to 980px instead of 970px? Or decrease space around white container a bit more? I want to allow for more space for content for these screen sizes
+
+h3 panel headings: please make them .9em
+-- Done
+
+.navbar: please make 20px instead of 16px
+
+main navigation (the one in grey): font-size: large (instead of medium)
+-- Done
+
+info pull-right (the "last updated" text): font-size: keep as medium
+It shows as medium, shall I make it smaller or bigger?
+
+horizontal-menu: margin-top: -130px (instead of -150px)
+-- Done
+
+in panels, switch around collapse button to be on the left and menu button to be on the right. 
+-- Done
+
+to the left of collapse button, plz add "fullscreen" button or any placeholder button just so we show 3 buttons in panels 
+-- Done
+
+Things get wacky under ~ 990px, let's hold off on that for now 
+
+Small updates: 
+
+Remove the + and > icon in the "Quick Shortcuts" panel 
+-- Done
+
+Change header title from "Quick Shortcuts"  to just: "Shortcuts" 
+-- Done
+
+Change header title of "Stock Market" to "Favorite Sites" 
+-- Done
+
+Add Tooltips on mouseover:
+The two buttons above Quick Shortcuts - add tooltip: "Refresh Homepage Data" and "Customize Home" 
+These are not the buttons yet -- just images I cut and pasted ... Do you have these icons as images?
+
+Add tooltips for panel icons: "Fullscreen", "Collapse", "Menu Options" 
+-- Done
+
+Move filter button to the right so it's right next to toggle -  I didn't think it was a big deal but stupid users bitched during testing, and this is an extremely important button so let's humor them
+-- Done
+
+Sorry to keep bugging you about font-sizes, but can we please change the main navigation (home/profiles/etc) size to "small" without having it affect anything else? 
+-- Done
+
+Can we please also do the same for the links within Quick Shortcuts (change to small)? Just the actual links - not their category names (like CRM) or the panel headers. 
+-- Done
