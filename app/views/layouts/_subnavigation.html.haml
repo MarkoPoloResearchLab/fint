@@ -1,0 +1,26 @@
+%section.horizontal-menu
+  .column-and-a-half.selected
+    = link_to root_path, remote: true, class: "text-center" do
+      = image_tag 'icon_home.png'
+      %p= t('.home')
+  .column-and-a-half
+    = link_to profiles_path, remote: true, class: "text-center" do
+      = image_tag 'icon_profiles.png'
+      %p= t('.profiles')
+  .column-and-a-half
+    = link_to root_path, class: "text-center" do
+      = image_tag 'icon_reports.png'
+      %p= t('.reports')
+  .column-and-a-half
+    = link_to root_path, class: "text-center" do
+      = image_tag 'icon_benchmark.png'
+      %p= t('.benchmark')
+  .col-xs-4.pull-right
+    .filter
+      .switch.has-switch.center-y.pull-right
+        .switch-on.switch-animate
+          %input{checked: "", "data-toggle" => "switch", type: "checkbox"}/
+          %span.switch-left ON
+          %label &nbsp;
+          %span.switch-right OFF
+      = link_to t('.filter'), "#", class: "wide-green-button pull-right center-y", data:{toggle: "modal", target: "#myModal"}
