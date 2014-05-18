@@ -11,6 +11,20 @@ en:
       help: Help Center
       notifications: Notifications
       account: Account
+    subnavigation:
+      home: Home
+      profiles: Profiles
+      benchmark: Benchmark
+      reports: Create Report
+  profiles:
+    index:
+      action1: Sites Data
+      action2: Act now
+      action3: Something else here
+      action4: Separated link
+      twenty-five: 25
+      fifty: 50
+      one-hundred: 100
   home:
     controls:
       collapse: Collapse
@@ -39,10 +53,6 @@ en:
       crm_item2: "View Taskss & Appointments"
       crm_item3: "Create New Task & Appointment"
       crm_item4: Create New Case Study
-      home: Home
-      profiles: Profiles
-      benchmark: Benchmark
-      reports: Create Report
       profiles_item1: View Sites
       profiles_item2: View Corporations
       profiles_item3: View Industries

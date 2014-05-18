@@ -141,3 +141,19 @@ ul.nav.navbar-nav {
   left: 0;
   z-index: 99999;
 }
+
+.search-form {
+  @extend .pull-right;
+  @extend .col-xs-3;
+}
+
+.pages-selector {
+  @extend .pull-left;
+  @extend .col-xs-3;
+}
+
+.pagination-controls {
+  @extend .row;
+  // margin-bottom: 10px;
+  // padding-bottom: 10px;
+}

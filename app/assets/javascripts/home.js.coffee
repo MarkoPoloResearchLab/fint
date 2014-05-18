@@ -8,6 +8,12 @@ enableTooltips = ->
   $("[data-toggle='tooltip']")
     .tooltip()
 
+selectSubMenu = ->
+  $('.horizontal-menu .column-and-a-half').click ->
+    $('.horizontal-menu .column-and-a-half').removeClass 'selected'
+    $(this).addClass "selected"
+
+
 changeIconOnCollapse = ->
   $(".panel-collapse.collapse.in").on 'hidden.bs.collapse', ->
     $(this)
@@ -45,6 +51,7 @@ resizeElement = ->
 
 $ ->
   # enableBSSwitch()
+  selectSubMenu()
   enableTooltips()
   changeIconOnCollapse()
   resizeElement()

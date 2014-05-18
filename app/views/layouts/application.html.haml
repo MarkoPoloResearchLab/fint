@@ -12,4 +12,8 @@
       = render 'layouts/navigation'
     %main.cream{role: "main"}
       = render 'layouts/messages'
-      = yield
+      .grey-stripe
+      .home
+        = render 'layouts/subnavigation'
+        = yield
+        = render 'layouts/modal'

@@ -4,8 +4,8 @@
     %span.icon-bar
     %span.icon-bar
     %span.icon-bar
-  -#%a.navbar-brand{:href => "#"} Project name
-  = image_tag 'logo.png', class: "pull-left"
+  = link_to root_path do
+    = image_tag 'logo.png', class: "pull-left"
 .navbar-collapse.collapse
   -# %ul.nav.navbar-nav.navbar-left
     %li
