@@ -45,6 +45,24 @@
           .panel-body
             = render 'table'
             = render 'pagination', page: 5
+    .stocks1
+      .panel.panel-default
+        .panel-heading
+          %h3.panel-title.text-left
+            = t('.table_title')
+            = render 'controls', link_id: "table_panel", dropdown_id: "dd5"
+        #table_panel.panel-collapse.collapse.in 
+          .panel-body
+            %table.data-tabled.table.table-bordered.table-striped
+              %thead
+                %tr
+                  - @data.shift.each do |h|
+                    %th= h
+              %tbody
+                - @data.each do |d|
+                  %tr
+                    - d.each do |f|
+                      %td= f
     .stats
       .panel.panel-default
         .panel-heading

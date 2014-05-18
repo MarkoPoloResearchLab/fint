@@ -14,6 +14,7 @@ gem 'thin'
 gem 'flat-ui-sass', github: 'wingrunr21/flat-ui-sass'
 gem "term-ansicolor"
 gem "bootstrap-switch-rails", github: "manuelvanrijn/bootstrap-switch-rails"
+gem 'jquery-datatables-rails'
 # group :production do
 #   gem 'rails_12factor' 
 # end

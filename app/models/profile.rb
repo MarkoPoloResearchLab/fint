@@ -5,6 +5,10 @@ class Profile
   include ActiveModel::Model
   
   class << self
+    def array
+      CSV.read('sources/table_sample.csv')
+    end
+
     def content
       table_data
       # .each{|r| r}

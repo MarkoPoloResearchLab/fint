@@ -18,4 +18,6 @@
 //= require flat-ui
 //= require flat-ui/flatui-checkbox
 //= require flat-ui/flatui-radio
+//= require dataTables/jquery.dataTables
+//= require dataTables/jquery.dataTables.bootstrap
 //= require_tree .
