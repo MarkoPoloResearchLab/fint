@@ -1,0 +1,94 @@
+.dashboard
+  .left-column
+    .pull-left
+      = image_tag 'settings.png'
+  .right-column
+    .dashboard-info
+      .info.text-right
+        =t('.update_time')
+  .clearfix
+  .left-column
+    .vertical-menu
+      .panel.panel-default
+        .panel-heading
+          %h3.panel-title.text-left
+            = t('.sortcut_menu_title')
+            =render 'dropdown_menu', dropdown_id: "dd1"
+        #shortcut_menu_panel.panel-collapse.collapse.in
+          .panel-body
+            %ul.nav.nav-list
+              %li.nav-header= t('.crm')
+              %li.active= link_to t('.crm_item1'), root_path
+              %li= link_to t('.crm_item2'), root_path
+              %li= link_to t('.crm_item3'), root_path
+              %li= link_to t('.crm_item4'), root_path
+              %li.nav-header= t('.profiles')
+              %li= link_to t('.profiles_item1'), root_path
+              %li= link_to t('.profiles_item2'), root_path
+              %li= link_to t('.profiles_item3'), root_path
+              %li= link_to t('.profiles_item4'), root_path
+              %li= link_to t('.profiles_item5'), root_path
+              %li.nav-header= t('.reports')
+              %li= link_to t('.reports_item1'), root_path
+              %li= link_to t('.reports_item2'), root_path
+              %li= link_to t('.reports_item3'), root_path
+              %li= link_to t('.reports_item4'), root_path
+              %li= link_to t('.reports_item5'), root_path
+  .right-column
+    .stocks
+      .panel.panel-default
+        .panel-heading
+          %h3.panel-title.text-left
+            = t('.table_title')
+            = render 'controls', link_id: "table_panel", dropdown_id: "dd2"
+        #table_panel.panel-collapse.collapse.in 
+          .panel-body
+            = render 'table'
+            = render 'pagination', page: 5
+    .stats
+      .panel.panel-default
+        .panel-heading
+          %h3.panel-title.text-left
+            = t('.stats_title')
+            = render 'controls', link_id: "stats_panel", dropdown_id: "dd3"
+        #stats_panel.panel-collapse.collapse.in  
+          .panel-body
+            .row
+              .col-xs-12.text-center
+                %ul
+                  %li.image= image_tag "PieChart1.png"
+                  %li.image= image_tag "PieChart2.png"
+                  %li.image= image_tag "PieChart3.png"
+    .news
+      .panel.panel-default
+        .panel-heading
+          %h3.panel-title.text-left
+            = t('.news_title')
+            = render 'controls', link_id: "news_panel", dropdown_id: "dd4"
+        #news_panel.panel-collapse.collapse.in  
+          .panel-body
+            .story
+              .story_title
+                = t('.story_title')
+              .story_date
+                = t('.story_date')
+              .story_text
+                = t('.story_text')
+            %hr
+            .story
+              .story_title
+                = t('.story_title')
+              .story_date
+                = t('.story_date')
+              .story_text
+                = t('.story_text')
+            %hr
+            .story
+              .story_title
+                = t('.story_title')
+              .story_date
+                = t('.story_date')
+              .story_text
+                = t('.story_text')
+          .panel-footer
+            = t('.more')
