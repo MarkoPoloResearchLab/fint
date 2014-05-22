@@ -199,3 +199,7 @@ span.navbar-new.green {
 .nav.nav-list > li:not(.nav-header) {
   font-size: small;
 }
+
+.dataTables_filter, .dataTables_paginate {
+  @extend .pull-right;
+}

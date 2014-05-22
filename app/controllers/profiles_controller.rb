@@ -1,9 +1,3 @@
 class ProfilesController < ApplicationController
-  before_action :get_table, only: :index
-
-  private
-    def get_table
-      @data = Profile.content
-      @headers = Profile.headers
-    end
+  before_action :get_table_data, only: :index
 end

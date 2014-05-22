@@ -33,22 +33,33 @@
           = render 'search_form'
         .clearfix
     .panel-body
-      %table.table.table-bordered.table-striped
+      %table.data-tabled.table.table-bordered.table-striped
         %thead
           %tr
-            - @headers.each do |h|
+            - @data.shift.each do |h|
               %th= h
         %tbody
           - @data.each do |d|
             %tr
-              %td= d.field(0)
-              %td= d.field(1)
-              %td= d.field(2)
-              %td= d.field(3)
-              %td= d.field(4)
-              %td= d.field(5)
-              %td= d.field(6)
-              %td= d.field(7)
-              %td= d.field(8)
-              %td= d.field(9)
-      = render 'home/pagination', page: 1
+              - d.each do |f|
+                %td= f
+      -#          
+        %table.table.table-bordered.table-striped
+          %thead
+            %tr
+              - @headers.each do |h|
+                %th= h
+          %tbody
+            - @data.each do |d|
+              %tr
+                %td= d.field(0)
+                %td= d.field(1)
+                %td= d.field(2)
+                %td= d.field(3)
+                %td= d.field(4)
+                %td= d.field(5)
+                %td= d.field(6)
+                %td= d.field(7)
+                %td= d.field(8)
+                %td= d.field(9)
+        = render 'home/pagination', page: 1

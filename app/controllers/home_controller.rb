@@ -1,8 +1,7 @@
 class HomeController < ApplicationController
+  before_action :get_table_data, only: :index
   respond_to :js, :html
-  def index
-    @data = Profile.array
-    
+  def index    
     respond_to do |format|
       format.html{ render '_index' }
       format.js{ render 'index' }

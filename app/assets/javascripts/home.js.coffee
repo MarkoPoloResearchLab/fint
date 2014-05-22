@@ -13,6 +13,11 @@ selectSubMenu = ->
     $('.horizontal-menu .column-and-a-half').removeClass 'selected'
     $(this).addClass "selected"
 
+changePaginationStyle = ->
+  $('.data-tabled').on 'draw.dt', ->
+    $('.dataTables_paginate ul')
+      .addClass 'pagination-plain'
+      .parent().removeClass 'pagination'
 
 changeIconOnCollapse = ->
   $(".panel-collapse.collapse.in").on 'hidden.bs.collapse', ->
@@ -49,9 +54,22 @@ resizeElement = ->
     $(".dashboard").show()
     resizeElement()
 
-$ ->
-  # enableBSSwitch()
+# $ ->
+#   # enableBSSwitch()
+#   selectSubMenu()
+#   enableTooltips()
+#   changeIconOnCollapse()
+#   resizeElement()
+#   changePaginationStyle()
+
+enableBSDataTable = ->
+  $('.data-tabled').bootstrapDataTable()
+
+$(document).on "ajax:complete page:change load", ->
   selectSubMenu()
   enableTooltips()
   changeIconOnCollapse()
   resizeElement()
+  changePaginationStyle()
+  enableBSDataTable()
+
