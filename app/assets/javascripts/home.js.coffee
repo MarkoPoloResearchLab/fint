@@ -27,6 +27,11 @@ changePaginationStyle = ->
       .addClass 'pagination-plain'
       .parent().removeClass 'pagination'
 
+enableFixedHeaders = ->
+  $('.fixed-headers')
+    .prepFixedHeader()
+    .fixedHeader()
+
 changeIconOnCollapse = ->
   $(".panel-collapse.collapse.in").on 'hidden.bs.collapse', ->
     $(this)
@@ -69,3 +74,4 @@ $(document).on "ajax:complete page:change load", ->
   resizeElement()
   changePaginationStyle()
   enableBSDataTable()
+  enableFixedHeaders()

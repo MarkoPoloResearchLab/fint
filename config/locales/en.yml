@@ -41,7 +41,8 @@ en:
     index:
       filter: Filter
       update_time: "Last data update: 59 mins ago"
-      table_title: Favorite Sites
+      table_title1: Favorite Sites Paged
+      table_title2: Favorite Sites Fixed
       sortcut_menu_title: Shortcuts
       stats_title: Pulp prices
       news_title: News

@@ -35,7 +35,7 @@
               %li= link_to t('.reports_item4'), root_path
               %li= link_to t('.reports_item5'), root_path
   .right-column
-    .stocks
+    -#.stocks
       .panel.panel-default
         .panel-heading
           %h3.panel-title.text-left
@@ -49,11 +49,29 @@
       .panel.panel-default
         .panel-heading
           %h3.panel-title.text-left
-            = t('.table_title')
-            = render 'controls', link_id: "table_panel", dropdown_id: "dd5"
+            = t('.table_title1')
+            = render 'controls', link_id: "srocks1_panel", dropdown_id: "dd5"
         #table_panel.panel-collapse.collapse.in 
           .panel-body
             %table.data-tabled.table.table-bordered.table-striped
+              %thead
+                %tr
+                  - @data.shift.each do |h|
+                    %th= h
+              %tbody
+                - @data.each do |d|
+                  %tr
+                    - d.each do |f|
+                      %td= f
+    .stocks2
+      .panel.panel-default
+        .panel-heading
+          %h3.panel-title.text-left
+            = t('.table_title2')
+            = render 'controls', link_id: "stocks2_panel", dropdown_id: "dd6"
+        #table_panel.panel-collapse.collapse.in 
+          .panel-body
+            %table.fixed-headers.table.table-bordered.table-striped
               %thead
                 %tr
                   - @data.shift.each do |h|
