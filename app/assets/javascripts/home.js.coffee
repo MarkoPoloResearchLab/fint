@@ -4,9 +4,17 @@ enableBSSwitch = ->
     .parent()
     .bootstrapSwitch()
 
+enableBSDataTable = ->
+  $('.data-tabled').bootstrapDataTable()
+  largeTable = $('.large-data-tabled').bootstrapDataTable
+    sDom: "<'row'<'col-xs-5'l><'col-xs-2'r><'col-xs-5'f>>t<'row'<'col-xs-6'i><'col-xs-6'p>>"
+
 enableTooltips = ->
   $("[data-toggle='tooltip']")
     .tooltip()
+
+moveFilter = ->
+  $('.dataTables_filter').append
 
 selectSubMenu = ->
   $('.horizontal-menu .column-and-a-half').click ->
@@ -14,7 +22,7 @@ selectSubMenu = ->
     $(this).addClass "selected"
 
 changePaginationStyle = ->
-  $('.data-tabled').on 'draw.dt', ->
+  $('.data-tabled, .large-data-tabled').on 'draw.dt', ->
     $('.dataTables_paginate ul')
       .addClass 'pagination-plain'
       .parent().removeClass 'pagination'
@@ -54,17 +62,6 @@ resizeElement = ->
     $(".dashboard").show()
     resizeElement()
 
-# $ ->
-#   # enableBSSwitch()
-#   selectSubMenu()
-#   enableTooltips()
-#   changeIconOnCollapse()
-#   resizeElement()
-#   changePaginationStyle()
-
-enableBSDataTable = ->
-  $('.data-tabled').bootstrapDataTable()
-
 $(document).on "ajax:complete page:change load", ->
   selectSubMenu()
   enableTooltips()
@@ -72,4 +69,3 @@ $(document).on "ajax:complete page:change load", ->
   resizeElement()
   changePaginationStyle()
   enableBSDataTable()
-

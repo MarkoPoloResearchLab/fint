@@ -17,7 +17,7 @@
           %li= link_to t('.action4'), root_path
       =render 'home/dropdown_menu', dropdown_id: "dd1"
     .panel-heading
-      .pagination-controls
+      -#.pagination-controls
         .pages-selector
           .btn-group
             = link_to t('.twenty-five'), root_path, type: :button, class: "btn btn-primary btn-sm"
@@ -33,7 +33,7 @@
           = render 'search_form'
         .clearfix
     .panel-body
-      %table.data-tabled.table.table-bordered.table-striped
+      %table.large-data-tabled.table.table-bordered.table-striped
         %thead
           %tr
             - @data.shift.each do |h|
