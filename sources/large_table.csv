@@ -1,0 +1,56 @@
+Site Corporation Name,Site Name,Site Mailing City,Site Mailing State/Province,Site Country,Name of Line,Pulp Line Status,PL Current Supplier,Tech Age - Queried Lines,Pulp Type,"TPY Queried Pulp by Line, ADST",Corporation Code,Site Name,Site - Also Known As,Site Code,Site Corporation Name,Full Corporation Name
+National Gypsum,Oxford,Oxford,AL,United States,0002 PM 1,Operating,Andritz,38.5,Recycled Fiber,84700,9442-0,Oxford,National Gypsum Co.,0002,National Gypsum,National Gypsum Co.
+IP,Courtland,Courtland,AL,United States,0005 Kraft 2,Operating,Andritz,35,Kraft,460200,9324-0,Courtland,International Paper Co. Courtland Mill,0005,IP,International Paper Company
+IP,Courtland,Courtland,AL,United States,0005 Kraft 3,Operating,Andritz,22,Kraft,300900,9324-0,Courtland,International Paper Co. Courtland Mill,0005,IP,International Paper Company
+IP,Mobile IP,Mobile,AL,United States,0010 Kraft,Dismantled,Andritz,,Kraft,0,9324-0,Mobile IP,International Paper Co. Mobile,0010,IP,International Paper Company
+IP,Prattville,Prattville,AL,United States,0014 Kamyr 1,Operating,Andritz,46,Kraft,447525,9324-0,Prattville,International Paper Co. Prattville,0014,IP,International Paper Company
+IP,Prattville,Prattville,AL,United States,0014 Kamyr 2,Operating,Andritz,33,Kraft,283645,9324-0,Prattville,International Paper Co. Prattville,0014,IP,International Paper Company
+IP,Prattville,Prattville,AL,United States,0014 Kamyr 3,Operating,Andritz,33.75,Kraft,298496,9324-0,Prattville,International Paper Co. Prattville,0014,IP,International Paper Company
+IP,Riverdale,Selma,AL,United States,0019 Kraft Hardwood,Operating,"GL&V, Inc.",47,Kraft,219024,9324-0,Riverdale,International Paper Co. Riverdale Mill,0019,IP,International Paper Company
+IP,Riverdale,Selma,AL,United States,0019 Kraft Softwood,Operating,"GL&V, Inc.",31,Kraft,217620,9324-0,Riverdale,International Paper Co. Riverdale Mill,0019,IP,International Paper Company
+IP,Prattville,Prattville,AL,United States,0014 Recycled,Operating,Kadant,26,Recycled Fiber,97461,9324-0,Prattville,International Paper Co. Prattville,0014,IP,International Paper Company
+IP,Pine Hill,Pine Hill,AL,United States,0018 Kraft,Operating,Andritz,37.25,Kraft,520075,9324-0,Pine Hill,International Paper Co. Pine Hill,0018,IP,International Paper Company
+IP,Pine Hill,Pine Hill,AL,United States,0018 OCC 1,Operating,Kadant,30,Recycled Fiber,74195,9324-0,Pine Hill,International Paper Co. Pine Hill,0018,IP,International Paper Company
+IP,Pine Hill,Pine Hill,AL,United States,0018 OCC 2,Operating,Kadant,22,Recycled Fiber,76680,9324-0,Pine Hill,International Paper Co. Pine Hill,0018,IP,International Paper Company
+IP,Pine Hill,Pine Hill,AL,United States,0018 Semichemical,Operating,Andritz,32,NSSC,216550,9324-0,Pine Hill,International Paper Co. Pine Hill,0018,IP,International Paper Company
+IP,Riverdale,Selma,AL,United States,0019 Deinked,Operating,Kadant,18,Recycled Fiber,35750,9324-0,Riverdale,International Paper Co. Riverdale Mill,0019,IP,International Paper Company
+RockTenn,Demopolis,Demopolis,AL,United States,0006 Deinked,Shutdown,Metso,27.75,Recycled Fiber,0,9546-0,Demopolis,Rock-Tenn Co. - Demopolis Mill,0006,RockTenn,RockTenn Co.
+RockTenn,Demopolis,Demopolis,AL,United States,0006 Kraft Hardwood,Operating,Andritz,15.75,Kraft,208950,9546-0,Demopolis,Rock-Tenn Co. - Demopolis Mill,0006,RockTenn,RockTenn Co.
+RockTenn,Demopolis,Demopolis,AL,United States,0006 Kraft Softwood,Operating,Andritz,17.75,Kraft,200550,9546-0,Demopolis,Rock-Tenn Co. - Demopolis Mill,0006,RockTenn,RockTenn Co.
+RockTenn,Stevenson,Stevenson,AL,United States,0020 NSSC #1,Operating,Metso,39,NSSC,285600,9546-0,Stevenson,Stevenson Mill,0020,RockTenn,RockTenn Co.
+RockTenn,Stevenson,Stevenson,AL,United States,0020 NSSC #2,Operating,Metso,15,NSSC,219912,9546-0,Stevenson,Stevenson Mill,0020,RockTenn,RockTenn Co.
+RockTenn,Stevenson,Stevenson,AL,United States,0020 Recycled S-1,Operating,Kadant,34.5,Recycled Fiber,137802,9546-0,Stevenson,Stevenson Mill,0020,RockTenn,RockTenn Co.
+RockTenn,Stevenson,Stevenson,AL,United States,0020 Recycled S-2,Operating,Kadant,17,Recycled Fiber,72471,9546-0,Stevenson,Stevenson Mill,0020,RockTenn,RockTenn Co.
+RockTenn,Stevenson,Stevenson,AL,United States,0020 Recycled S-3,Operating,"GL&V, Inc.",16,Recycled Fiber,213129,9546-0,Stevenson,Stevenson Mill,0020,RockTenn,RockTenn Co.
+MeadWestvaco,Coated Board - Mahrt,Phenix City,AL,United States,0008 Kraft Batch,Operating,Chicago Bridge & Iron,22.5,Kraft,486177,7587-0,Coated Board - Mahrt,MeadWestvaco Coated Board Mill - Mahrt,0008,MeadWestvaco,MeadWestvaco Corp.
+MeadWestvaco,Coated Board - Mahrt,Phenix City,AL,United States,0008 Kraft Kamyr,Operating,Andritz,47,Kraft,403990,7587-0,Coated Board - Mahrt,MeadWestvaco Coated Board Mill - Mahrt,0008,MeadWestvaco,MeadWestvaco Corp.
+MeadWestvaco,Coated Board - Mahrt,Phenix City,AL,United States,0008 Recycled 1,Operating,Metso,25,Recycled Fiber,71355,7587-0,Coated Board - Mahrt,MeadWestvaco Coated Board Mill - Mahrt,0008,MeadWestvaco,MeadWestvaco Corp.
+MeadWestvaco,Coated Board - Mahrt,Phenix City,AL,United States,0008 Recycled 2,Operating,Kadant,19,Recycled Fiber,94785,7587-0,Coated Board - Mahrt,MeadWestvaco Coated Board Mill - Mahrt,0008,MeadWestvaco,MeadWestvaco Corp.
+K-C,Mobile KC,Mobile,AL,United States,0012 Recycled,Operating,Kadant,57.75,Recycled Fiber,46150,9354-0,Mobile KC,Kimberly-Clark Corp. Mobile Operations,0012,K-C,Kimberly-Clark Corp.
+K-C,Mobile KC,Mobile,AL,United States,0012 Deinked,Operating,<BLANK>,5.75,Recycled Fiber,69935,9354-0,Mobile KC,Kimberly-Clark Corp. Mobile Operations,0012,K-C,Kimberly-Clark Corp.
+Newark Group,Mobile,Mobile,AL,United States,0013 PM 1,Operating,Mill Design,36.5,Recycled Fiber,84700,9443-0,Mobile,Mobile Paperboard Corp.,0013,Newark Group,The Newark Group Inc.
+Newark Group,Mobile,Mobile,AL,United States,0013 PM 2,Operating,Kadant,29,Recycled Fiber,78750,9443-0,Mobile,Mobile Paperboard Corp.,0013,Newark Group,The Newark Group Inc.
+Alabama Dry Felt,Calera,Calera,AL,United States,0024 Recycled,Shutdown,Kadant,12.75,Recycled Fiber,0,0024,Calera,Alabama Dry Felt Mill,0024,Alabama Dry Felt,Alabama Dry Felt LLC
+SCA,Barton,Cherokee,AL,United States,0025 Deinked TM 12,Operating,Voith,9,Recycled Fiber,96250,6059-0,Barton,SCA Tissue of North America - Barton Operations,0025,SCA,SCA
+SCA,Barton,Cherokee,AL,United States,0025 Deinked TM 14,Operating,Voith,5,Recycled Fiber,87500,6059-0,Barton,SCA Tissue of North America - Barton Operations,0025,SCA,SCA
+G-P,Brewton,Brewton,AL,United States,0003 Kraft Bleached,Operating,Chicago Bridge & Iron,56,Kraft,389480,9266-0,Brewton,Georgia-Pacific Brewton LLC - Brewton Mill,0003,G-P,Georgia-Pacific LLC
+G-P,Brewton,Brewton,AL,United States,0003 Kraft Hi-Yield,Operating,Chicago Bridge & Iron,48.25,Kraft,87500,9266-0,Brewton,Georgia-Pacific Brewton LLC - Brewton Mill,0003,G-P,Georgia-Pacific LLC
+G-P,Naheola,Pennington,AL,United States,0015 Kraft Hardwood 2,Operating,Chicago Bridge & Iron,47.75,Kraft,397100,9266-0,Naheola,Georgia-Pacific Naheola Mill,0015,G-P,Georgia-Pacific LLC
+G-P,Naheola,Pennington,AL,United States,0015 Kraft Softwood,Operating,Andritz,51.75,Kraft,227430,9266-0,Naheola,Georgia-Pacific Naheola Mill,0015,G-P,Georgia-Pacific LLC
+G-P,River Pulp,Perdue Hill,AL,United States,0016 Kraft ARP,Operating,Kadant,35,Kraft,385809,9266-0,River Pulp,Alabama River Cellulose mill,0016,G-P,Georgia-Pacific LLC
+G-P,River Pulp,Perdue Hill,AL,United States,0016 Kraft Pine-APP,Operating,Andritz,19,Kraft,655875,9266-0,River Pulp,Alabama River Cellulose mill,0016,G-P,Georgia-Pacific LLC
+Boise,Jackson,Jackson,AL,United States,0007 Deinked,Operating,Kadant,18,Recycled Fiber,102030,9062-0,Jackson,Boise Paper Solutions,0007,Boise,Boise Inc.
+Boise,Jackson,Jackson,AL,United States,0007 Kraft,Operating,Tube Tune,49,Kraft,236280,9062-0,Jackson,Boise Paper Solutions,0007,Boise,Boise Inc.
+Resolute Forest,Coosa Pines,Coosa Pines,AL,United States,0004 Kraft Pine D,Operating,"GL&V, Inc.",19.5,Kraft,188495,9006-0,Coosa Pines,AbitibiBowater Coosa Pines Operations,0004,Resolute Forest,Resolute Forest Products
+Resolute Forest,Coosa Pines,Coosa Pines,AL,United States,0004 Kraft Pine E,Operating,"GL&V, Inc.",27,Kraft,111113,9006-0,Coosa Pines,AbitibiBowater Coosa Pines Operations,0004,Resolute Forest,Resolute Forest Products
+Resolute Forest,Coosa Pines,Coosa Pines,AL,United States,0004 Recycled Plant,Shutdown,Voith,12,Recycled Fiber,0,9006-0,Coosa Pines,AbitibiBowater Coosa Pines Operations,0004,Resolute Forest,Resolute Forest Products
+Resolute Forest,Alabama River,Perdue Hill,AL,United States,0022 Deinked 1,Shutdown,Kadant,20,Recycled Fiber,0,9006-0,Alabama River,AbitibiBowater  Alabama River Newsprint Co.,0022,Resolute Forest,Resolute Forest Products
+Resolute Forest,Alabama River,Perdue Hill,AL,United States,0022 TMP 1,Shutdown,Metso,23,TMP,0,9006-0,Alabama River,AbitibiBowater  Alabama River Newsprint Co.,0022,Resolute Forest,Resolute Forest Products
+Resolute Forest,Alabama River,Perdue Hill,AL,United States,0022 TMP 2,Shutdown,Metso,23,TMP,0,9006-0,Alabama River,AbitibiBowater  Alabama River Newsprint Co.,0022,Resolute Forest,Resolute Forest Products
+Resolute Forest,Alabama River,Perdue Hill,AL,United States,0022 TMP 3,Shutdown,Metso,23,TMP,0,9006-0,Alabama River,AbitibiBowater  Alabama River Newsprint Co.,0022,Resolute Forest,Resolute Forest Products
+Virtual Packaging Company 1,Virtual Packaging Mill 1-1,Prattville,AL,United States,94101V Recycled 1,Virtual-Operating,Virtual-Supplier,0.5,Recycled Fiber,630125,94199-0V,Virtual Packaging Mill 1-1,Linerboard,94101V,Virtual Packaging Company 1,Virtual Packaging Company 1
+Virtual Packaging Company 1,Virtual Packaging Mill 1-1,Prattville,AL,United States,94101V Recycled 2,Virtual-Operating,Virtual-Supplier,0.5,Recycled Fiber,630125,94199-0V,Virtual Packaging Mill 1-1,Linerboard,94101V,Virtual Packaging Company 1,Virtual Packaging Company 1
+Virtual Pulp Company 5,Virtual Pulp Mill 5-29,Perdue Hill,AL,United States,97529V Kraft 1,Virtual-Operating,Virtual-Supplier,0.5,Kraft,441017,97599-0V,Virtual Pulp Mill 5-29,Kraft Pulp,97529V,Virtual Pulp Company 5,Virtual Pulp Company 5
+Virtual Packaging Company 2,Virtual Packaging Mill 2-26,Prattville,AL,United States,94226V Recycled 1,Virtual-Operating,Virtual-Supplier,0.5,Recycled Fiber,489151,94299-0V,Virtual Packaging Mill 2-26,Corrugated Medium,94226V,Virtual Packaging Company 2,Virtual Packaging Company 2
+Virtual Packaging Company 2,Virtual Packaging Mill 2-26,Prattville,AL,United States,94226V Recycled 2,Virtual-Operating,Virtual-Supplier,0.5,Recycled Fiber,489151,94299-0V,Virtual Packaging Mill 2-26,Corrugated Medium,94226V,Virtual Packaging Company 2,Virtual Packaging Company 2
+Virtual Packaging Company 2,Virtual Packaging Mill 2-26,Prattville,AL,United States,94226V Recycled 3,Virtual-Operating,Virtual-Supplier,0.5,Recycled Fiber,489151,94299-0V,Virtual Packaging Mill 2-26,Corrugated Medium,94226V,Virtual Packaging Company 2,Virtual Packaging Company 2
