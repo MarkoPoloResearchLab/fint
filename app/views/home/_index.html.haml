@@ -56,10 +56,10 @@
             %table.data-tabled.table.table-bordered.table-striped
               %thead
                 %tr
-                  - @data.shift.each do |h|
+                  - @headers.each do |h|
                     %th= h
               %tbody
-                - @data.each do |d|
+                - @content.each do |d|
                   %tr
                     - d.each do |f|
                       %td= f
@@ -72,12 +72,34 @@
         #table_panel.panel-collapse.collapse.in 
           .panel-body
             %table.fixed-headers.table.table-bordered.table-striped
+              - @headers.each do |c|
+                %col.small-column-width
               %thead
                 %tr
-                  - @data.shift.each do |h|
+                  - @headers.each do |h|
                     %th= h
               %tbody
-                - @data.each do |d|
+                - @content.each do |d|
+                  %tr
+                    - d.each do |f|
+                      %td= f
+    .stocks3
+      .panel.panel-default
+        .panel-heading
+          %h3.panel-title.text-left
+            = t('.table_title2')
+            = render 'controls', link_id: "stocks3_panel", dropdown_id: "dd7"
+        #table_panel.panel-collapse.collapse.in 
+          .panel-body
+            %table
+              - @headers.each do |c|
+                %col.small-column-width
+              %thead
+                %tr
+                  - @headers.each do |h|
+                    %th= h
+              %tbody
+                - @content.each do |d|
                   %tr
                     - d.each do |f|
                       %td= f

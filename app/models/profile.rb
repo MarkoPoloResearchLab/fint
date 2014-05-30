@@ -6,7 +6,8 @@ class Profile
   
   class << self
     def array
-      CSV.read('sources/table_sample.csv')
+      # CSV.read('sources/table_sample.csv')
+      CSV.read('sources/large_table.csv')
     end
 
     def content

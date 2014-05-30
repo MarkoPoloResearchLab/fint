@@ -4,5 +4,6 @@ $.fn.bootstrapDataTable = (options = {}) ->
   options['bProcessing'] or= true
   options['oLanguage'] or= {"sProcessing": '<span class="label label-info">Processing...</span>' }
   options['sAjaxSource'] or= (this.data('source') ? this.data('source'))
+  # options['scrollX'] or= false
 
   this.dataTable(options).fnSetFilteringDelay()

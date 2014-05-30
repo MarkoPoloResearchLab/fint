@@ -8,13 +8,18 @@ enableBSDataTable = ->
   $('.data-tabled').bootstrapDataTable()
   largeTable = $('.large-data-tabled').bootstrapDataTable
     sDom: "<'row'<'col-xs-5'l><'col-xs-2'r><'col-xs-5'f>>t<'row'<'col-xs-6'i><'col-xs-6'p>>"
+    scrollX: true
+    sPaginationType: "bootstrap"
+    # sPaginationType: "bootstrap"
+    pagingType: "scrolling"
+    # pagingType: "bootstrap"
 
 enableTooltips = ->
   $("[data-toggle='tooltip']")
     .tooltip()
 
-moveFilter = ->
-  $('.dataTables_filter').append
+# moveFilter = ->
+#   $('.dataTables_filter').append
 
 selectSubMenu = ->
   $('.horizontal-menu .column-and-a-half').click ->
@@ -28,7 +33,7 @@ changePaginationStyle = ->
       .parent().removeClass 'pagination'
 
 enableFixedHeaders = ->
-  $('.fixed-headers')
+  $('table.fixed-headers')
     .prepFixedHeader()
     .fixedHeader()
 
@@ -67,6 +72,10 @@ resizeElement = ->
     $(".dashboard").show()
     resizeElement()
 
+changeViewMenuCaret = ->
+  $('table .dropdown').on 'hide.bs.dropdown show.bs.dropdown',  (e)-> 
+    $( e.relatedTarget ).toggleClass('fui-play').toggleClass('caret');
+
 $(document).on "ajax:complete page:change load", ->
   selectSubMenu()
   enableTooltips()
@@ -74,4 +83,5 @@ $(document).on "ajax:complete page:change load", ->
   resizeElement()
   changePaginationStyle()
   enableBSDataTable()
-  enableFixedHeaders()
+  # enableFixedHeaders()
+  changeViewMenuCaret()

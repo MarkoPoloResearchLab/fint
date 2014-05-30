@@ -5,6 +5,8 @@ class ApplicationController < ActionController::Base
 
   private
     def get_table_data
-      @data = Profile.array
+      data = Profile.array
+      @headers = data.shift
+      @content = data
     end
 end

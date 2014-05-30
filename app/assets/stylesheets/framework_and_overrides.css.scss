@@ -12,6 +12,7 @@ $screen-lg-min: 1200px;
 @import 'flat-ui/variables';
 $grid-float-breakpoint: $screen-md-min;
 @import 'bootstrap';
+// @import 'dataTables/jquery.dataTables.bootstrap3';
 // @import "bootstrap3-switch";
 @import 'flat-ui';
 @import 'switch';

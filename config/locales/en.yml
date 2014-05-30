@@ -25,6 +25,15 @@ en:
       twenty-five: 25
       fifty: 50
       one-hundred: 100
+    dropdown_view_menu:
+      menu: View Menu
+      action1: Overview
+      action2: CRM
+      action3: Market Intel
+      action4: Production
+      action5: Equipment
+      action6: Environment
+      action7: Fuel
   home:
     controls:
       collapse: Collapse

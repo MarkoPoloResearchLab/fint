@@ -97,6 +97,19 @@ $grid-float-breakpoint: $screen-md-min;
   height: 53px;
 }
 
+.dropdown {
+  display: inline-block;
+}
+
+.first-profile-column {
+  width: 60px;
+}
+
+.view-text {
+  display: inline-block;
+  text-decoration: underline;
+}
+
 .dropdown-header {
   font-size: .7em;
 }
@@ -202,4 +215,43 @@ span.navbar-new.green {
 
 .dataTables_filter, .dataTables_paginate {
   @extend .pull-right;
+}
+
+@mixin column-width($columns: 10) {
+  width: 100% / $columns;
+}
+
+.large-column-width {
+  @include column-width(12);
+}
+
+// .large-data-tabled {
+//   width: 100%;
+// }
+
+// .table-wrapper {
+//   width: 800px;
+//   // margin: 0 auto;
+// }
+
+.profiles {
+  .dataTables_wrapper {
+    @extend .row;
+    // width: 800px;
+    margin: 0 auto;
+  }
+  select.input-sm {
+    line-height: 20px;
+  }
+}
+
+.small-column-width {
+  @include column-width(10);
+}
+
+table.large-data-tabled {
+  width: 100%;
+  th, td { 
+    white-space: nowrap; 
+  }
 }
