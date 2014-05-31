@@ -1,7 +1,6 @@
 .dashboard.profiles
   .panel-panel-default
     .panel-heading
-      -# %h3.panel-title.text-left= t('.sortcut_menu_title')
       .btn-group
         = link_to t('.action1'), root_path, type: :button, class: "btn btn-primary btn-xs"
         = link_to "#", class: 'btn dropdown-toggle btn-primary btn-xs', data:{toggle: :dropdown} do
@@ -17,24 +16,22 @@
           %li= link_to t('.action4'), root_path
       =render 'home/dropdown_menu', dropdown_id: "dd1"
     .panel-body
-      .table-wrapper
-        %table.large-data-tabled.table.table-bordered.table-striped{cellpadding: 0, cellspacing: 0, border: 0,  width: "100%"}
-          -# %col.first-profile-column
-          %thead
+      %table.large-data-tabled.table.table-bordered.table-striped
+        %thead
+          %tr
+            - @headers.each do |h|
+              %th= h
+        %tbody
+          - @content.each_with_index do |row, row_index|
             %tr
-              - @headers.each do |h|
-                %th= h
-          %tbody
-            - @content.each_with_index do |row, row_index|
-              %tr
-                - row.each_with_index do |cell, cell_index|
-                  - case cell_index
-                  - when 0
-                    %td
-                      = render 'dropdown_view_menu', dropdown_id: "dd#{row_index}"
-                  - when 1
-                    %td
-                      = render 'checkbox', row_index: row_index
-                  - else
-                    %td= cell
+              - row.each_with_index do |cell, cell_index|
+                - case cell_index
+                - when 0
+                  %td
+                    = render 'dropdown_view_menu', dropdown_id: "dd#{row_index}"
+                - when 1
+                  %td
+                    = render 'checkbox', row_index: row_index
+                - else
+                  %td= cell
       

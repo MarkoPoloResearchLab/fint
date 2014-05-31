@@ -194,7 +194,8 @@ tbody > tr > td {
   text-align: center;
 }
 
-.pagination-plain {
+ul.pagination-plain {
+  margin: 20px 0;
   a {
     color: $light-grey;
   }
@@ -225,15 +226,6 @@ span.navbar-new.green {
   @include column-width(12);
 }
 
-// .large-data-tabled {
-//   width: 100%;
-// }
-
-// .table-wrapper {
-//   width: 800px;
-//   // margin: 0 auto;
-// }
-
 .profiles {
   .dataTables_wrapper {
     @extend .row;
@@ -249,9 +241,10 @@ span.navbar-new.green {
   @include column-width(10);
 }
 
-table.large-data-tabled {
-  width: 100%;
-  th, td { 
-    white-space: nowrap; 
-  }
+th, td { 
+  white-space: nowrap; 
 }
+
+// table.large-data-tabled {
+//   width: 100%;
+// }

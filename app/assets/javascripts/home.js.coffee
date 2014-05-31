@@ -5,21 +5,18 @@ enableBSSwitch = ->
     .bootstrapSwitch()
 
 enableBSDataTable = ->
-  $('.data-tabled').bootstrapDataTable()
-  largeTable = $('.large-data-tabled').bootstrapDataTable
+  $('.data-tabled').bootstrapDataTable
+    scrollX: true
+    pagingType: "bootstrap"
+  $('.large-data-tabled').bootstrapDataTable
     sDom: "<'row'<'col-xs-5'l><'col-xs-2'r><'col-xs-5'f>>t<'row'<'col-xs-6'i><'col-xs-6'p>>"
     scrollX: true
-    sPaginationType: "bootstrap"
-    # sPaginationType: "bootstrap"
-    pagingType: "scrolling"
-    # pagingType: "bootstrap"
+    pagingType: "bootstrap"
+    # pagingType: "scrolling"
 
 enableTooltips = ->
   $("[data-toggle='tooltip']")
     .tooltip()
-
-# moveFilter = ->
-#   $('.dataTables_filter').append
 
 selectSubMenu = ->
   $('.horizontal-menu .column-and-a-half').click ->
@@ -30,12 +27,7 @@ changePaginationStyle = ->
   $('.data-tabled, .large-data-tabled').on 'draw.dt', ->
     $('.dataTables_paginate ul')
       .addClass 'pagination-plain'
-      .parent().removeClass 'pagination'
-
-enableFixedHeaders = ->
-  $('table.fixed-headers')
-    .prepFixedHeader()
-    .fixedHeader()
+      .removeClass 'pagination'
 
 changeIconOnCollapse = ->
   $(".panel-collapse.collapse.in").on 'hidden.bs.collapse', ->
@@ -83,5 +75,4 @@ $(document).on "ajax:complete page:change load", ->
   resizeElement()
   changePaginationStyle()
   enableBSDataTable()
-  # enableFixedHeaders()
   changeViewMenuCaret()
