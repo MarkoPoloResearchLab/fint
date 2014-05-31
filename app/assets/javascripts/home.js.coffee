@@ -1,6 +1,6 @@
 enableBSSwitch = ->
   $("[data-toggle='switch']")
-    .wrap('<div class="switch" />')
+    .wrap '<div class="switch" />'
     .parent()
     .bootstrapSwitch()
 
@@ -65,8 +65,10 @@ resizeElement = ->
     resizeElement()
 
 changeViewMenuCaret = ->
-  $('table .dropdown').on 'hide.bs.dropdown show.bs.dropdown',  (e)-> 
-    $( e.relatedTarget ).toggleClass('fui-play').toggleClass('caret');
+  $('table .dropdown').on 'hide.bs.dropdown show.bs.dropdown', (e)-> 
+    $( e.relatedTarget )
+      .toggleClass 'fui-play'
+      .toggleClass 'caret'
 
 $(document).on "ajax:complete page:change load", ->
   selectSubMenu()
