@@ -19,9 +19,9 @@ en:
   profiles:
     index:
       action1: Sites Data
-      action2: Act now
-      action3: Something else here
-      action4: Separated link
+      action2: Corporations Data
+      action3: Industry Data
+      action4: Regions Data
       twenty-five: 25
       fifty: 50
       one-hundred: 100
@@ -40,10 +40,11 @@ en:
       resize: Fullscreen
     dropdown_menu:
       menu: Menu Options
-      action1: Act now
-      action2: Or act later
-      action3: Something else here
-      action4: Separated link
+      action1: Save to... 
+      action2: Export to... 
+      action3: Print
+      action4: View in Table Editor
+      action5: Unpin from Home
     pagination:
       previous: ← Previous
       next: Newer →
