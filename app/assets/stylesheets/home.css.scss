@@ -245,3 +245,14 @@ th, td {
   white-space: nowrap; 
 }
 
+.profiles ul.dropdown-menu {
+  font-size: 16px;
+}
+
+.dropdown-menu-hidden {
+  overflow: hidden;
+}
+
+.dropdown-menu-visible {
+  overflow: visible;
+}

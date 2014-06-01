@@ -69,6 +69,9 @@ changeViewMenuCaret = ->
     $( e.relatedTarget )
       .toggleClass 'fui-play'
       .toggleClass 'caret'
+      .parent()
+      .toggleClass 'dropdown-menu-hidden'
+      .toggleClass 'dropdown-menu-visible'
 
 $(document).on "ajax:complete page:change load", ->
   selectSubMenu()

@@ -2,8 +2,8 @@
   .panel-panel-default
     .panel-heading
       .btn-group
-        = link_to t('.action1'), root_path, type: :button, class: "btn btn-primary btn-xs"
-        = link_to "#", class: 'btn dropdown-toggle btn-primary btn-xs', data:{toggle: :dropdown} do
+        = link_to t('.action1'), root_path, type: :button, class: "btn btn-info btn-md"
+        = link_to "#", class: 'btn dropdown-toggle btn-info btn-md', data:{toggle: :dropdown} do
           %span.caret
           %span.sr-only 
             Toggle Dropdown
@@ -12,9 +12,8 @@
           %li= link_to t('.action1'), root_path
           %li= link_to t('.action2'), root_path
           %li= link_to t('.action3'), root_path
-          %li.divider
           %li= link_to t('.action4'), root_path
-      =render 'home/dropdown_menu', dropdown_id: "dd1"
+      = render 'home/dropdown_menu', dropdown_id: "dd1"
     .panel-body
       %table.large-data-tabled.table.table-bordered.table-striped
         %thead
